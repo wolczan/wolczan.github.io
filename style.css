@@ -143,12 +143,12 @@ input[type="text"] {
   color: white;
 }
 .thumb:hover {
-  font-style:white;
+  font-style:black;
   width: 250px;
   height: 50px;
   text-align: center;
-  background-color: #149ddd;
-  border-radius: 10px;
+  
+  border-radius: 20px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
@@ -159,6 +159,16 @@ input[type="text"] {
   margin-left: 56rem;
   margin-top: 9rem;
   font-weight: 700;
+  background: -webkit-linear-gradient(45deg, #62a7c7, #5430b6 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrap3 {
+  background: -webkit-linear-gradient(45deg, #62a7c7, #5430b6 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .underline {
   overflow-x:hidden;
@@ -186,10 +196,16 @@ input[type="text"] {
   flex-direction: column;
   position: fixed; 
 }
+#nav li {
+  transition: padding 0.1s ease;
+}
 #nav li:hover {
-  background-color: white;
+  background-color: #1E90FF;
   color: black;
   cursor: pointer;
+  padding: 5px 20px;
+  border: 2px solid transparent;
+  border-radius: 18px;
 }
 #nav .header a {    /* ML  */
   font-size: 1.2rem;
@@ -255,6 +271,7 @@ input[type="text"] {
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease-in-out; 
+  outline: 0,5px solid black;
 }
 .small2:hover {
   transform: scale(0.55);
@@ -284,15 +301,17 @@ img#small2 {
 }
 .rzad {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 18rem;
+  flex-wrap: nowrap;
   margin-top: -4rem;
+  justify-content: flex-start;
+
 }
 .skill {
   width: 160px;
   height: 160px;
   position: relative;
-  margin: 5rem;
+  margin: 2rem;
+  margin-top: 5rem;
 }
 .outer {
   height: 160px;
@@ -316,10 +335,10 @@ img#small2 {
                         0.5px 0.5px 0px rgba(0,0,0,0.15),
                         0px 12px 10px -10px rgba(0,0,0,0.05);
 }
-#number, #number2, #number3 {
-    font-weight: 600;
-    color : #543030;
-
+#number, #number2, #number3, #number4 {
+  font-weight: 700;
+  color : #543030;
+  font-size: 1.1rem;
 }
 circle {
     fill: none;
@@ -420,6 +439,7 @@ i:hover {
   transform: scale(0.95);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); 
   transition: transform 0.3s ease-in-out;
+  transform: scale(0.95) translateY(10px); 
 }
 .button span:hover {
   color:black;
@@ -436,7 +456,7 @@ i:hover {
   border-radius: 5px;
   position: absolute;
   right: 0.8rem;
-  bottom:-10rem;
+  bottom:-9rem;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .button span {
@@ -772,7 +792,7 @@ div.container {
 }
 .service {
   width: 25%;
-  height:25%;
+  height:8%;
 }
 .powershell, .office365 {
   list-style: none;
@@ -1017,25 +1037,27 @@ figure.snip1157 .arrow {
   color: #ffffff;
 }
 @media screen and (max-width: 2560px) {
-#nav {
+.small2 {
+  padding:40px; 
+  margin-top: -9rem;
+}#nav {
   height: 100%;
   width: 14%;
 }
-h2#about {
- /* margin-left: 20rem; */
-}
+
 .rzad {
-  margin-left: 22rem;
+  margin-left: 25rem;
 }
 .test-grid {
   width: min(60%, 70rem);
 }
 .text2 {
   margin-left: 3rem;
+  margin-top: rem;
 }
 .button {
-  margin-bottom: 2rem;
-  margin-right: 8rem;
+  margin-right: 5rem;
+  margin-bottom: -3rem;
 }
 }
 @media screen and (max-width: 1524px) {
@@ -1047,7 +1069,7 @@ h2#about {
 }
 .footer {
   width: 100%;
-  margin-left: 6rem;
+ 
 }
 #nav {
   padding: 2rem;
@@ -1062,9 +1084,7 @@ h2#about {
   margin-bottom: -7rem;
   margin-right: 3rem;
 }
-h2#about {
-/* margin-left:8rem; */
-}
+
 .rzad {
   flex-wrap: nowrap;
   margin-left:12rem;
@@ -1150,8 +1170,7 @@ p.par3 {
 }
 .rectangle2 {
   height: 25rem;
-  border: 1px solid yellow;
-  width: 25rem;
+  width: 150%;
   margin-left: 9.5rem;
 }
 .wrapper {
@@ -1174,19 +1193,16 @@ p.par {
   font-size: 1rem;
 }
 .rectangle2 {
-  border: 1px solid rgb(17, 14, 192);
   width: 100rem;
-  width: 30%;
+  width: 56%;
   box-sizing: border-box;
   padding: 10px;
   margin-left: 20%;
 }
 .cont {
-  border: 1px solid green;
   border-radius: 5px;
   background-color: #FFFFFF;
   padding: 25px;
- 
 }
 #about, #resume{
   font-size: 1.5rem;
@@ -1331,7 +1347,6 @@ div.tytul {
   margin-right: -2rem;
 }
 #maps {
-  border: 1px solid red;
   width: 100%;
   display: block;
 }
@@ -1353,7 +1368,6 @@ div.tytul {
   font-size: 0.7rem;
   margin: 0 auto;
   width: 100%; /* set the width to 100% so that it takes up the entire width of its parent container */
-  border: 1px solid yellow;
   padding: 50px 25%;
   color: white;
   background: grey;
