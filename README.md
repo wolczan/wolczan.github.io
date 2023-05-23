@@ -11,7 +11,7 @@ Home page: This page provides a brief introduction to who I am and what I do. It
 
 HTML CSS JavaScript Bootstrap Font Awesome Github Pages
 
-How to Run the Project To view the website, simply visit the following URL: https://wolczan.github.io/portfolio
+How to Run the Project To view the website, simply visit the following URL: https://wolczan.github.io/
 
 Alternatively, you can clone the repository to your local machine and open the index.html file in your web browser.
 
