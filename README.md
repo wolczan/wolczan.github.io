@@ -1,6 +1,7 @@
 # portfolio.github.io
 Portfolio Website
-Welcome to the README file for my portfolio project on Github. In this project, I have created a portfolio website to showcase my skills, experience, and projects.
+Welcome to the README file for my portfolio project on Github.
+In this project, I have created a portfolio website to showcase my skills, experience, and projects.
 
 Project Overview This portfolio website is designed to provide an overview of my professional experience and showcase my projects. The website is built using HTML, CSS, and JavaScript and is hosted on Github Pages.
 
