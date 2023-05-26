@@ -1,5 +1,4 @@
 # Portfolio Website
-Portfolio Website
 Welcome to the README file for my portfolio project on Github.
 In this project, I have created a portfolio website to showcase my skills, experience, and projects.
 
