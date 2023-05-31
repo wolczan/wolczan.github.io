@@ -2,6 +2,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  font-family: system-ui;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 .logo {
   color: white;
@@ -11,7 +14,6 @@ body {
   font-family: 'Indie Flower', cursive;
   margin-left: 0.5rem;
 }
-
 .nav {
   width: 100%;
   margin: 0 auto;
@@ -32,7 +34,6 @@ body {
 .nav li:not(:first-child) {
   margin-left: 40px;
 }
-
 .nav a {
   color: white;
   text-decoration: none;
@@ -44,12 +45,6 @@ body {
 .nav li {
   transition: transform 0.3s ease-in-out;
   margin: 0 1px;
-}
-/* other styles */
-body {
-  font-family: system-ui;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 .main {
   display: flex;
@@ -64,11 +59,9 @@ body {
 }
 .text {
   color: white;
-  
 }
 .text2 {
  COLOR: WHITE;
- ;
 }
 .header {
   font-size: 2rem;
@@ -86,7 +79,6 @@ body {
   padding: 30px; /* Adjust padding as desired */
   /* Other styles for the container */
 }
-
 .title2 {
   display:flex;
   flex-direction: column;
@@ -102,7 +94,6 @@ body {
   align-items: center;
  height: auto;
 }
-
 .container3 {
     flex: 0 0 80%;
     display: flex;
@@ -110,27 +101,28 @@ body {
     align-items: center;
    background-color: rgb(8, 27, 80);
   }
-  .search-bar {
-    display: flex;
-    align-items: center;
-  }
-  .search-bar input[type="text"] {
-    border-radius: 18px;
-    border: none;
-    font-size: 1.1rem;
-  }
-
-  .search-bar button {
-   
-    background-color: transparent; 
-    border: none;
-    cursor: pointer;
-  }
-  .flow > :where(:not(:first-child)) {
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+.search-bar input[type="text"] {
+  border-radius: 18px;
+  border: none;
+  font-size: 1.1rem;
+}
+.search-bar button {
+   background-color: transparent; 
+  border: none;
+  cursor: pointer;
+}.search-bar button img {
+  width: 20px; /* Specify the desired width */
+  height: 20px; /* Specify the desired height */
+  vertical-align: middle; /* Align the image vertically within the button */
+}
+.flow > :where(:not(:first-child)) {
     margin-inline-start: var(--flow-spacer, var(--spacer));
-  }
-
-  h5 {
+}
+h5 {
     display: inline; /* or any other appropriate display value */
     font-size: inherit;
     margin: 0; /* or adjust margin as desired */
@@ -347,7 +339,7 @@ body {
   .content .content-overlay {
     background: rgba(0,0,0,0.7);
     position: absolute;
-    width: 81%; /* Adjust the width to match the image size */
+    width: 83%; /* Adjust the width to match the image size */
     height: 90%; /* Adjust the height to match the image size */
     opacity: 0;
     margin: 0;
