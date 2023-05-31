@@ -165,7 +165,8 @@ input[type="text"] {
   -webkit-text-fill-color: transparent;
 }
 .wrap3 {
-  background: -webkit-linear-gradient(45deg, #62a7c7, #5430b6 80%);
+  background: white;
+  /* -webkit-linear-gradient(45deg, #62a7c7, #5430b6 80%); */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

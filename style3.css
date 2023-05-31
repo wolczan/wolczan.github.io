@@ -2,9 +2,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: system-ui;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 .logo {
   color: white;
@@ -14,6 +11,7 @@ body {
   font-family: 'Indie Flower', cursive;
   margin-left: 0.5rem;
 }
+
 .nav {
   width: 100%;
   margin: 0 auto;
@@ -34,6 +32,7 @@ body {
 .nav li:not(:first-child) {
   margin-left: 40px;
 }
+
 .nav a {
   color: white;
   text-decoration: none;
@@ -45,6 +44,12 @@ body {
 .nav li {
   transition: transform 0.3s ease-in-out;
   margin: 0 1px;
+}
+/* other styles */
+body {
+  font-family: system-ui;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 .main {
   display: flex;
@@ -59,9 +64,11 @@ body {
 }
 .text {
   color: white;
+  
 }
 .text2 {
  COLOR: WHITE;
+ ;
 }
 .header {
   font-size: 2rem;
@@ -79,6 +86,7 @@ body {
   padding: 30px; /* Adjust padding as desired */
   /* Other styles for the container */
 }
+
 .title2 {
   display:flex;
   flex-direction: column;
@@ -94,6 +102,7 @@ body {
   align-items: center;
  height: auto;
 }
+
 .container3 {
     flex: 0 0 80%;
     display: flex;
@@ -101,33 +110,56 @@ body {
     align-items: center;
    background-color: rgb(8, 27, 80);
   }
-.search-bar {
-  display: flex;
-  align-items: center;
-}
-.search-bar input[type="text"] {
-  border-radius: 18px;
-  border: none;
-  font-size: 1.1rem;
-}
-.search-bar button {
-   background-color: transparent; 
-  border: none;
-  cursor: pointer;
-}.search-bar button img {
-  width: 20px; /* Specify the desired width */
-  height: 20px; /* Specify the desired height */
-  vertical-align: middle; /* Align the image vertically within the button */
-}
-.flow > :where(:not(:first-child)) {
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  .search-bar input[type="text"] {
+    border-radius: 18px;
+    border: none;
+    font-size: 1.1rem;
+  }
+
+  .search-bar button {
+   
+    background-color: transparent; 
+    border: none;
+    cursor: pointer;
+  }
+  .flow > :where(:not(:first-child)) {
     margin-inline-start: var(--flow-spacer, var(--spacer));
-}
-h5 {
+  }
+
+  h5 {
     display: inline; /* or any other appropriate display value */
     font-size: inherit;
     margin: 0; /* or adjust margin as desired */
     font-weight: inherit;
   }
+
+.card__img {
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+.card__img:hover {
+    transform: scale(1.1); /* Specify the desired scale transformation on hover */
+} 
+#show_bg_2 {
+  background-image:
+  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+  url('Assets/img2.png');
+  width: 50%;
+  height: 500px;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container {
   max-width: 70rem;
   overflow: hidden;
@@ -161,7 +193,7 @@ h5 {
     flex-direction: row;
     max-width: 80%;
     margin: 0 auto;
-    background-color: black;
+    background-color: ;
   }
   .grid img {
     max-width: 50%;
@@ -172,15 +204,15 @@ h5 {
   align-self: center;
   }
 
-   .cart {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  border: 1px solid rgb(9, 50, 187);
+  .cart {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
   }
   .grid p {
     font-size: 1rem;
-    color: white;
+    color: black;
   }
   @media (min-width: 40em) {
   .card.featured {
@@ -339,7 +371,7 @@ h5 {
   .content .content-overlay {
     background: rgba(0,0,0,0.7);
     position: absolute;
-    width: 83%; /* Adjust the width to match the image size */
+    width: 51%; /* Adjust the width to match the image size */
     height: 90%; /* Adjust the height to match the image size */
     opacity: 0;
     margin: 0;
@@ -353,8 +385,8 @@ h5 {
   .content-image{
     width: auto;
     height:auto;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 70%;
+    max-height: 70%;
   }
   .content-details {
     position: absolute;
@@ -390,12 +422,36 @@ h5 {
     top: 80%;
   }
   .content .content-details .content-title {
-    width: 80%;
-    height: 50%;
+    width: 40%;
+    height: 30%;
   }
   .content-text {
-    width: 80%;
+    width: 50%;
     height: 50%;
   }
+  .search-bar button img {
+    width: 20px; /* Specify the desired width */
+    height: 20px; /* Specify the desired height */
+    vertical-align: middle; /* Align the image vertically within the button */
+}
+.content-title {
+  font-size: 1.3rem; /* Specify the desired font size */
+}
+.cart h2 a, .cert h3 {
+  color: black; /* Specify the desired text color */
+  text-decoration: none; /* Remove underline from the link */
+}
+.cart h1 a{
+  color: black;
+  text-decoration: none;
+}
+.cart p {
+  font-size: 16px; /* Specify the desired font size */
+  color: gray; /* Specify the desired text color */
+}
+.cart:nth-child(1) img {
+  width: 200px; /* Specify the desired width for the first cart's image */
+  height: auto; /* Maintain aspect ratio */
+}
   
  
