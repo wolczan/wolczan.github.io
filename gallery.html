@@ -14,8 +14,27 @@
 </head>
 
 <body>
-
-    <nav>
+  <nav>
+    <ul class="nav">
+      <li><div class="logo"><a href="https://wolczan.github.io/index.html">Maciej Libera</a></div></li>
+      <li><a href="https://wolczan.github.io/index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li class="search-li">
+        <div class="container2">
+          <form method="get" class="search-bar" onsubmit="submitSearch(event)">
+            <input type="text" placeholder="search anything" name="q" id="search-input">
+            <button type="submit" title="search"><img src="Assets/search.png" title="pic"></button>
+          </form>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  
+    <!-- <nav>
         <ul class="nav">
           <li><div class="logo">Maciej Libera</div></li>
           <li><a href="#">Home</a></li>
@@ -34,7 +53,7 @@
         </div></li>
 
       </ul>
-      </nav>
+      </nav>  -->
 
       <div class="title">
         <p class="header">Responsive Image Gallery</p>
@@ -82,7 +101,7 @@
               </div>
             </div>
             <div class="card stacked">
-              <img src="Assets/img2.png" alt="" class="card__img">
+              <img src="Assets/img2.jpg" alt="" class="card__img">
               <div class="card__content">
                 <h2 class="card__title">Challenges</h2>
                 <p class="card__price"></p>
@@ -150,7 +169,7 @@
       </article>
     </section>
     </div>
-    <br><br>
+    
 
 
     <div class="grid">
@@ -161,17 +180,17 @@
       </div>
       <div class="cart">
         <h2><a href="https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg" title="story pic">Exploring the World</a></h2>
-        <img src="https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg" title="story pic">
+        <img src="Assets/1june.jpg" title="story pic">
         <p>Responsible for creating SharePoint websites and updating existing web applications using scripting languages</p>
       </div>
       <div class="cart">
         <h2><a href="https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg" title="story pic">In the Sun</a></h2>
-        <img src="https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg" title="story pic">
+        <img src="Assets/june3.jpg" title="story pic">
         <p>Responsible for creating SharePoint websites and updating existing web applications using scripting languages</p>
       </div>
       <div class="cart">
-        <h1><a href="https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg" title="story pic">Blog</a></h3>
-        <img src="https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg" title="story pic">
+        <h2><a href="https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg" title="story pic">Blog</a></h2>
+        <img src="Assets/june5.jpg" title="story pic">
         <p>Responsible for creating SharePoint websites and updating existing web applications using scripting languages</p>
       </div>
     </div>

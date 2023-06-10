@@ -198,9 +198,6 @@ input[type="text"] {
   flex-direction: column;
   position: fixed; 
 }
-#nav li {
-  /* transition: padding 0.1s ease; */
-}
 #nav li:hover {
   background-color: #1E90FF;
   color: black;
@@ -458,7 +455,7 @@ i:hover {
   color:black;
 }
 .button {
-  width: 120px;
+  width: 200px;
   height: 30px;
   background-color: transparent;
   border: 2px solid #149ddd;
