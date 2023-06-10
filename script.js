@@ -7,10 +7,6 @@ function submitSearch(event) {
   document.getElementById("search-input").value = ""; // reset input field
 }
 
-function resetInput() {
-  document.getElementById("search-input").value = ""; 
-}
-
 let number = document.getElementById("number");
 let counter = 0;
 setInterval(() => {
@@ -31,7 +27,7 @@ setInterval(() => {
     counter2 += 1;
     number2.innerHTML = counter2 + "%";
   }
-}, 28,77);
+}, 28);
 let number3 = document.getElementById("number3");
 let counter3 = 0;
 setInterval(() => {
@@ -41,7 +37,18 @@ setInterval(() => {
     counter3 += 1;
     number3.innerHTML = counter3 + "%";
   }
-}, 28,77);
+}, 27);
+let number4 = document.getElementById("number4");
+let counter4 = 0;
+let intervalId = setInterval(() => {
+  if (counter4 === 70) {
+    clearInterval(intervalId);
+  } else {
+    counter4 += 1;
+    number4.innerHTML = counter4 + "%";
+  }
+}, 27);
+
 
 
 function showMessage() {
@@ -57,16 +64,11 @@ window.addEventListener('scroll', () => {
   }
 });   
 
-
-
 function resetForm() {
   document.getElementById("myForm").reset();
 }
 // Form details reset 
 
-function myFunction() {
-    document.getElementById("demo").innerHTML = "I have changed!";
-}
 let my1function = (name) => {
     console.log("Witaj ' + name + ' !");
 }; // myFunction("John");
