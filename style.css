@@ -127,8 +127,8 @@ i.fa-solid.fa-wand-magic-sparkles {
 .search-bar button img {
   border:0 ;
   border-radius: 50%;
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
   cursor: pointer;
   margin-left: -2rem;
 }
@@ -147,7 +147,6 @@ input[type="text"] {
   width: 250px;
   height: 50px;
   text-align: center;
-  
   border-radius: 20px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -452,7 +451,7 @@ i:hover {
   transform: scale(0.95) translateY(10px); 
 }
 .button span:hover {
-  color:black;
+  color:white;
 }
 .button {
   width: 200px;
@@ -465,8 +464,8 @@ i:hover {
   cursor: pointer;
   border-radius: 5px;
   position: absolute;
-  right: 0.8rem;
-  bottom:-9rem;
+  right: 3rem;
+  margin-top: 1rem;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .button span {
@@ -474,7 +473,7 @@ i:hover {
   font-weight: bold;
   font-size: 1rem;
   font-weight: 200;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: helvetica;
 }
 p.par2, #resume {
   margin-bottom:1rem;
@@ -560,6 +559,11 @@ p.bottom2{
 .art {
 	padding:0.5rem;
 	border-radius: 0.5rem;
+}
+.art.jir {
+  position: relative;
+  bottom: 2rem; /* Adjust this value to move the element up */
+  
 }
 .art-1 {
   display: flex;
@@ -736,7 +740,7 @@ h4 {
   margin-top: 3rem;
   padding: 50px 25%;
   color: white;
-  background: grey;
+  background: rgb(131, 124, 124);
   display: flex;
 }
 .loc {
@@ -1061,7 +1065,6 @@ figure.snip1157 .arrow {
   height: 100%;
   width: 14%;
 }
-
 .rzad {
   margin-left: 25rem;
 }
@@ -1071,10 +1074,6 @@ figure.snip1157 .arrow {
 .text2 {
   margin-left: 3rem;
   margin-top: rem;
-}
-.button {
-  margin-right: 5rem;
-  margin-bottom: -3rem;
 }
 }
 @media screen and (max-width: 1524px) {
