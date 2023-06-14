@@ -15,9 +15,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3px 1%;
   color: white;
-  background-color:black;
+  padding-left: 15px;
+}
+p:nth-child(5n) {
+  margin-bottom: 20px; /* Adjust the space after every 4th paragraph */
 }
 .logo {
   display: flex; /* Allow for centering vertically */
@@ -37,26 +39,21 @@ header {
   width: 25px;
   height: 25px;
   cursor: pointer;
-  background-image: url("https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg");
+  /* background-image: url("https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg"); */
+}
+nav {
+
+  flex-grow: 1;
+}
+ul li {
+  align-items: center;
 }
 .nav {
   list-style: none;
   display: flex;
   align-items: center;
-
+  justify-content: flex-start;
 }
- /* width: 100%;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  background-color: black;
-  height: 45px;
-  padding: 0;
-  box-shadow: 0 2px 2px rgba(22, 54, 197, 0.1);
-  list-style: none;
-  z-index: 100;
-  display: flex;
-  align-items: center; */
 .nav li {
   display: inline-block;
 }
@@ -68,14 +65,8 @@ header {
 }
 .container2 {
   padding: 9px 25px; 
-  background-color: black;
   border: none;
 }
-/*
-.nav li:not(.logo):not(.search-li) {
-  margin-left: 100px; /* Adjust the margin to create smaller spacing between elements 
-  transform: translateX(10px); /* Shifts the elements to the right 
-}   */
 .nav a {
   color: white;
   text-decoration: none;
@@ -96,7 +87,6 @@ header {
   border: none;
   cursor: pointer;
 }
-
 .nav li a {
   margin: 0 1px;
 }
@@ -126,7 +116,7 @@ body {
 .main {
   display: flex;
   flex-direction: row;
-  background: url("Assets/sky3.jpg");
+  /*background: url("Assets/sky3.jpg"); */
   overflow-x: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,16 +131,16 @@ body {
  color:white;
 }
 .title {
- background-image: url("Assets/sky3.jpg");
+ background-image: url("Assets/sky2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  padding: 30px; 
+  padding: 10px; 
 }
 .title2 {
   display:flex;
@@ -172,7 +162,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(8, 27, 80);
 }
 .search-bar {
   display: flex;
@@ -258,7 +247,7 @@ h5 {
   flex-direction: row;
   width: 100%;
   margin: 0 auto;
-  background-color: rgb(238, 225, 225);
+ /* background-color: rgb(238, 225, 225); */
   padding-block: max(1vh, 1rem);
   text-align: center;
   padding: 30px;
@@ -281,17 +270,17 @@ h5 {
   font-size: 1rem;
   color: black;
 }
-  @media (min-width: 40em) {
-  .card.featured {
-    grid-row: span 2;
-    grid-column: span 2;
-  }
+@media (min-width: 40em) {
+.card.featured {
+  grid-row: span 2;
+  grid-column: span 2;
+}
 .card.featured .card__title {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 }
 .card__description {
-    font-size: .7rem;
+  font-size: .7rem;
 }
 .card__price {
   font-size: 1rem;
@@ -310,13 +299,13 @@ h5 {
 }
 @media only screen and (min-width: 50em) {
 .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   }
 }
 .main-layout {
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 .with-sidebar {
   grid-template-columns: 1fr 20rem;
@@ -394,13 +383,13 @@ h5 {
     *,
     *::before,
     *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
     }
   }
-  .casestudies {
+.casestudies {
     align-items: stretch;
     display:grid;
     grid-area: casestudies;
@@ -409,15 +398,15 @@ h5 {
     justify-self: stretch;
     margin:0 auto;
     max-width: 70%;
-  }
-  .content{
-    position:relative;
-    overflow: hidden;
-  }
-  .rest {
+}
+.content{
+  position:relative;
+  overflow: hidden;
+}
+.rest {
   text-align:center;
-  }
-  .content .content-overlay {
+}
+.content .content-overlay {
     background: rgba(0,0,0,0.7);
     position: absolute;
     width: 51%; /* Adjust the width to match the image size */
@@ -426,18 +415,18 @@ h5 {
     margin: 0;
     padding: 0;
     transition: all 0.4s ease-in-out;
-  }
-  .content:hover .content-overlay{
+}
+.content:hover .content-overlay{
     opacity: 1;
     cursor: pointer;
-  }
-  .content-image{
+}
+.content-image{
     width: auto;
     height:auto;
     max-width: 70%;
     max-height: 70%;
-  }
-  .content-details {
+}
+.content-details {
     position: absolute;
     text-align: center;
     padding: 0 1rem;
@@ -451,21 +440,21 @@ h5 {
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-  }
-  .content:hover .content-details{
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-  }
-  .content-details h2{
-    color: #F4FAFF;
-    font-weight: 100;
-    margin-bottom: 0.5rem;
-  }
-  .content-details p{
-    color: #F4FAFF;
-    font-size: 1rem;
-  }
+}
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.content-details h2{
+  color: #F4FAFF;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+}
+.content-details p{
+  color: #F4FAFF;
+  font-size: 1rem;
+}
 .fadeIn-bottom{
   top: 80%;
 }
@@ -486,8 +475,10 @@ h5 {
   font-size: 1.3rem; /* Specify the desired font size */
 }
 .cart h2 a, .cert h3 {
-  color: black; /* Specify the desired text color */
+  color: white; /* Specify the desired text color */
   text-decoration: none; /* Remove underline from the link */
+  font-family: "Motserrat", sans-serif;
+  font-size: 30px;
 }
 .cart h1 a{
   color: black;
