@@ -126,6 +126,7 @@ body {
 }
 .text {
   color: white;
+  font-family: "Motserrat", sans-serif;
 }
 .text2 {
  color:white;
@@ -265,6 +266,12 @@ h5 {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  font-family: "Motserrat", sans-serif;
+  color: white;
+}
+.cart p {
+  font-family: "Motserrat", sans-serif;
+  color: white;
 }
 .grid p {
   font-size: 1rem;
@@ -486,7 +493,8 @@ h5 {
 }
 .cart p {
   font-size: 16px; /* Specify the desired font size */
-  color: gray; /* Specify the desired text color */
+  color: white; /* Specify the desired text color */
+  font-family: "Motserrat", sans-serif;
 }
 .cart:nth-child(1) img {
   width: 200px; /* Specify the desired width for the first cart's image */
