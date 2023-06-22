@@ -12,9 +12,6 @@ html {
   padding: 0; 
   text-decoration: none;
 }
-.right {
-  margin-left: 20%;
-}
 li:hover i.fa-solid.fa-house,
 li:hover i.fa-regular.fa-user,
 li:hover a[href="#home"],
@@ -28,7 +25,6 @@ li:hover i.fa-regular.fa-envelope,
 li:hover a[href="#contact"] {
   color: white;
 }
-
 li:hover i.fa-solid.fa-house.active ~ a[href="#home"],
 li:hover a[href="#home"] ~ i.fa-solid.fa-house.active {
   color: #1E90FF;
@@ -157,6 +153,9 @@ input[type="text"] {
   border-radius: 20px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+}
+.skills {
+  margin-left: 20%;
 }
 .wrap2 {
   font-size: 22px;
@@ -310,9 +309,10 @@ img#small2 {
 }
 .rzad {
   display: flex;
-  flex-wrap: nowrap;
-  margin-top: -4rem;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
+  margin-left: 20%;
 }
 .skill {
   width: 160px;
@@ -434,16 +434,17 @@ i:hover {
   padding: 0;
 }
 #about {
-  margin-left: 20%;
   margin-top:1.5rem;
+  margin-left: 18%
 }
 .text {
   background-color:rgb(255, 255, 255);
   color:black;
   width: 100%;
-  margin-left: 20%;
+  padding: 20px;
+  align-items: center;
   margin-top: 1rem;
-  max-width: 85%;
+  max-width: 100%;
 }
 .button:hover {
   background-color: #149ddd;
@@ -457,18 +458,16 @@ i:hover {
 }
 .button {
   width: 200px;
-  height: 30px;
+  height: 25px;
   background-color: transparent;
-  border: 2px solid #149ddd;
+  /*border: 3px solid #149ddd;*/
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-left: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  border-radius: 5px;
-  position: absolute;
-  right: 3rem;
-  margin-top: 1rem;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .button span {
   color: black;
@@ -477,10 +476,11 @@ i:hover {
   font-weight: 200;
   font-family: helvetica;
 }
-p.par2, #resume {
-  margin-bottom:1rem;
+#resume{
+  margin-left: 20.5%;
 }
-#resume, .relevant {
+
+.relevant {
   margin-left: 20rem;
 }
 p.par {    
@@ -488,36 +488,39 @@ p.par {
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  margin-right: 7rem;
+  margin-left: 17%
 }
 p.par2 {
-  margin-left: 20%;
-  margin-top: 1rem;
+  max-width: 100%;
+  margin: 0 auto;
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  margin-right: 7rem;
+  padding: 10px;
+  margin-left: 20%;
 }
 p.par3{
-  margin-left: 20%;
+  padding: 10px;
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  margin-right: 7rem;
+  margin-left: 20%;
+  max-width: 100%;
+ 
 }
 .text2 {
- display: flex; 
- flex-direction: row;
- width: 100%; 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start; /* Change align-items to flex-start */
+  margin-left: 3%;
 }
+
 .text2 div {
   font-size: 1rem;
 }
-.m365 {
-  margin-top: 2rem;
- }
 .bottom {
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
@@ -533,7 +536,7 @@ p.bottom2{
   margin-right: 10rem;
  }
 .right {
-  margin-left: -6rem;
+  margin-left: 1rem;
  }
 #services {
   margin-left: 21%;
@@ -565,7 +568,6 @@ p.bottom2{
 .art.jir {
   position: relative;
   bottom: 2rem; /* Adjust this value to move the element up */
-  
 }
 .art-1 {
   display: flex;
@@ -604,11 +606,8 @@ h4 {
   margin-bottom: 10px;
   font-size: 0.9rem;
 }
-.skills , #resume, .relevant, .edu, .con, #services{
+ .edu, .con, #services{
   margin-left: 20%;
-}
-.skills {
-  margin-top: -2rem;
 }
 .skills .underline h1::after {
   content: "";
@@ -1060,34 +1059,21 @@ figure.snip1157 .arrow {
   color: #ffffff;
 }
 @media screen and (max-width: 2560px) {
-.small2 {
-  padding:40px; 
-  margin-top: -9rem;
-}#nav {
+
+#nav {
   height: 100%;
   width: 14%;
 }
-.rzad {
-  margin-left: 25rem;
-}
 .test-grid {
   width: min(60%, 70rem);
-}
-.text2 {
-  margin-left: 3rem;
-  margin-top: rem;
 }
 }
 @media screen and (max-width: 1524px) {
 #nav .header2 a, #nav .header3 a{
   display:none;
 }  
-.button{
-  margin-bottom: 2rem;
-}
 .footer {
   width: 100%;
- 
 }
 #nav {
   padding: 2rem;
@@ -1098,14 +1084,9 @@ figure.snip1157 .arrow {
 }
 }
 @media screen and (max-width: 1324px) {
-.button {
-  margin-bottom: -7rem;
-  margin-right: 3rem;
-}
-
 .rzad {
-  flex-wrap: nowrap;
-  margin-left:12rem;
+  display: flex;
+  
 }
 img.small2 {
   display:none;
@@ -1140,13 +1121,8 @@ ul#nav {
   max-width: 12%;
   height: 50rem;
 }
-.m365, .navi, .bottom2, .bottom {
-  margin-left:27%;
-}
 .skills {
   margin-top: 0;
-  padding: 1rem;
-  margin-left: 16rem;
 }
 .container {
   width: 70%;
@@ -1163,9 +1139,6 @@ div.container {
 }
 p.bottom2 {
   margin-top: 1rem;
-}
-p.par3 {
-  margin-right: 4rem;
 }
 #nav .header2 a, #nav .header3 a{
   display:none;
@@ -1188,7 +1161,7 @@ p.par3 {
 }
 .rectangle2 {
   height: 25rem;
-  width: 150%;
+  width: 100%;
   margin-left: 9.5rem;
 }
 .wrapper {
@@ -1200,19 +1173,36 @@ p.par3 {
 }
 }
 @media (max-width: 768px) { 
-h2#about {
-  margin-left: 0.1rem;
+  p.par3 {
+    margin: 0;
+    padding: 0;
+  }
+h2#about, h2#m365, h2#resume, h2.rel, h2#contact {
+  margin-left: 1.5rem;
 }  
-.button {
-  margin-bottom: 36rem;
-}
-p.par {
+
+.relevant {
   margin: 0;
+  margin-left: .5rem;
+}
+p.par, p.par3 {
+  
+  margin: 0;
+  padding: 10px;
   font-size: 1rem;
 }
+.line h2 {
+  margin-left: 1.5rem;
+}
+.button {
+  margin-left: 1%;
+}
+.rzad {
+  /* margin: 0; */
+  padding: 0;
+}
 .rectangle2 {
-  width: 100rem;
-  width: 56%;
+  width: 52%;
   box-sizing: border-box;
   padding: 10px;
   margin-left: 20%;
@@ -1220,12 +1210,13 @@ p.par {
 .cont {
   border-radius: 5px;
   background-color: #FFFFFF;
-  padding: 25px;
+  padding: 5px;
+  width: 150%;
 }
-#about, #resume{
+#about, #resume, .rel{
   font-size: 1.5rem;
 }
-#resume, #services {
+#services {
   margin-left: 2.5rem;
 }
 #portfolio {
@@ -1235,7 +1226,6 @@ p.par {
   margin-left: -0.5rem;
 }
 .relevant {
-  margin-left: 3rem;
   font-size: 0.7rem;
 }
 .m365 {
@@ -1244,11 +1234,11 @@ p.par {
 .test-grid {
   display: flex;
   flex-direction:column;
+  margin-left: 5rem;
 }
 .skills {
   font-size: 1.5rem;
-  margin-left: 2.5rem;
-  margin-top: 2rem;
+  margin-left: 0.5rem;
 }
 #nav {
   max-width: 100%;
@@ -1259,64 +1249,63 @@ p.par {
   align-items: center;
   position: static;
 }
+.navi {
+  display: flex;
+   margin-left: 40%;
+}
 .pic, #small2, .small2, #nav  {
   display:none ;
 }
 .text {
   max-width: 100%;
   margin-left: 0.1rem;
+  margin-bottom: 1rem;
 }
 .rzad {
   display:flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  margin-left: 3rem;
-  max-width: 20px;
 }
-p.bottom2 {
+div.bottom2 {
   font-size: 16px;
-  padding: rem;
+  margin-left: 10%;
 }
 .text2 div { 
   max-width: 100%;
-  margin: 0 auto;
-  font-size: 1rem;
+  /* margin: 0 auto; */
+  padding:10px;
+  margin: 0;
 }
-.text2 {
-  width: 100%;
-  margin: 0 auto;
-  font-size: 3rem;
-}
-p.par2, p.par3 {
-  font-size: 16px; 
-  margin: 0 auto;
-  margin-left: 2.5rem;
-}
-.right h2 {
-  margin-left: 6%;
-}
-div.bottom {
-  margin-left: 2.5rem;
+p.bottom {
+  padding: 10px;
+  margin: 0;
 }
 p.bottom2 {
   max-width: 100%;
   margin: 0 auto;
-  margin-left: 2.5rem;
+  padding: 10px;
 }
 div.navi {
   margin-left: 8rem;
 }
 div.tytul {
   width:100%;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
-.edu, .mov {
-  margin-left: 3rem;
-  width: 190%;
+.mov {
+  width: 50%;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  margin-right: 3rem;
+  margin-left: 0.8rem;
   }
+.certy {
+  flex-direction: column;
+} 
 .movi {
-  margin-left: 5rem;
-  }
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
 .underline h1::after {
   content: "";
   width: 3.8rem;
@@ -1329,7 +1318,7 @@ div.tytul {
 }
 .right h2::after {
   content: "";
-  width: 24rem;
+  width: 29rem;
   height: 3px;
   display: block;
   position: absolute;
@@ -1360,35 +1349,31 @@ div.tytul {
 #nav {
   max-width: 100%;
 }
-.button {
-  margin-bottom: 29rem;
-  margin-right: -2rem;
-}
 #maps {
   width: 100%;
   display: block;
 }
 .rectangle {
-  width: 70%;
+  /*width: 70%;
   height: 50%;
-  margin-left: 2rem;
+  margin-left: 2rem; */
 }
 .rectangle2 {
-  width: 100%;
-  height: 20%;
+  max-width: 70%;
+  height: 100%;
 }
 .cont {
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #FFFFFF;
-  padding: 30px;
+  padding: 10px;
 }
 .footer {
-  font-size: 0.7rem;
+  font-size:1.1rem;
   margin: 0 auto;
   width: 100%; /* set the width to 100% so that it takes up the entire width of its parent container */
-  padding: 50px 25%;
+  padding: 40px 5%;
   color: white;
-  background: grey;
+  background: rgb(151, 150, 150);
   display: flex;
   flex-direction: column; /* change the flex direction to column so that the child elements stack vertically */
   align-items: center; /* center the child elements horizontally */
