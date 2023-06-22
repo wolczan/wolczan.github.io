@@ -488,7 +488,8 @@ p.par {
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  margin-left: 17%
+  margin-left: 17%;
+  padding: 10px;
 }
 p.par2 {
   max-width: 100%;
@@ -1173,22 +1174,35 @@ p.bottom2 {
 }
 }
 @media (max-width: 768px) { 
-  p.par3 {
-    margin: 0;
-    padding: 0;
-  }
-h2#about, h2#m365, h2#resume, h2.rel, h2#contact {
+p.par {
+  padding: 10px;
+}
+p.par3 {
+  margin: 0;
+  padding: 10px;
+}
+p.par2 {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.con {
+ margin: 0;
+ padding: 0;
+ margin-left: .5rem;
+}  
+h2#about, h2#m365, h2#resume, h2.rel, h2#contact, h2#education {
   margin-left: 1.5rem;
 }  
-
+.edu, .cert {
+  margin: 0;
+}
 .relevant {
   margin: 0;
   margin-left: .5rem;
 }
 p.par, p.par3 {
-  
   margin: 0;
-  padding: 10px;
   font-size: 1rem;
 }
 .line h2 {
@@ -1198,8 +1212,9 @@ p.par, p.par3 {
   margin-left: 1%;
 }
 .rzad {
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
+  margin-left: 3rem;
 }
 .rectangle2 {
   width: 52%;
@@ -1217,10 +1232,11 @@ p.par, p.par3 {
   font-size: 1.5rem;
 }
 #services {
-  margin-left: 2.5rem;
+  margin-left: 1.5rem;
 }
 #portfolio {
-  margin-left: -5.5rem;
+  margin: 0 auto;
+  margin-left: 1rem;
 }
 .testi {
   margin-left: -0.5rem;
@@ -1283,9 +1299,6 @@ p.bottom2 {
   max-width: 100%;
   margin: 0 auto;
   padding: 10px;
-}
-div.navi {
-  margin-left: 8rem;
 }
 div.tytul {
   width:100%;
