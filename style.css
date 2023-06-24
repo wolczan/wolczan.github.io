@@ -387,6 +387,9 @@ svg {
   font-weight: 600;
   margin-left: 4rem;
 }
+.show-on-mobile {
+  display: none;
+}
 @keyframes anim {
     100% {
         stroke-dashoffset: 44;   /* 90%   88 80%*/
@@ -440,10 +443,9 @@ i:hover {
 .text {
   background-color:rgb(255, 255, 255);
   color:black;
-  width: 100%;
+ 
   padding: 20px;
   align-items: center;
-  margin-top: 1rem;
   max-width: 100%;
 }
 .button:hover {
@@ -554,7 +556,6 @@ p.bottom2{
 .test-grid {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  gap: 3.5rem;
   margin-left: 20%;
   margin-inline: auto ;
 	width:min(65%, 45rem );
@@ -1059,6 +1060,12 @@ figure.snip1157 .arrow {
   background: #CD201F;
   color: #ffffff;
 }
+.show-on-desktop {
+  display: block;
+}
+.show-on-mobile {
+  display: none;
+}
 @media screen and (max-width: 2560px) {
 
 #nav {
@@ -1179,12 +1186,12 @@ p.par {
 }
 p.par3 {
   margin: 0;
-  padding: 10px;
+  padding: 20px;
 }
 p.par2 {
   max-width: 100%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
 }
 .con {
  margin: 0;
@@ -1238,9 +1245,10 @@ p.par, p.par3 {
   margin-left: 1rem;
 }
 .testi {
-  margin-left: -0.5rem;
   display:flex;
   flex-direction: column;
+  width: 25rem;
+  margin: auto;
 }
 .relevant {
   font-size: 0.7rem;
@@ -1251,7 +1259,6 @@ p.par, p.par3 {
 .test-grid {
   display: flex;
   flex-direction:column;
-  margin-left: 5rem;
 }
 .skills {
   font-size: 1.5rem;
@@ -1276,7 +1283,6 @@ p.par, p.par3 {
 .text {
   max-width: 100%;
   margin-left: 0.1rem;
-  margin-bottom: 1rem;
 }
 .rzad {
   display:flex;
@@ -1367,8 +1373,21 @@ div.tytul {
   width: 100%;
   display: block;
 }
+.show-on-desktop {
+  display: none;
+}
+.show-on-mobile {
+  display: block;
+}
+.right h2::after {
+  content: "";
+  width: 13rem;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background-color: #149ddd;
+}
 .rectangle {
-  border: 1px solid green;
   margin: auto;
   /*width: 70%;
   height: 50%;
