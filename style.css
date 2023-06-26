@@ -524,9 +524,6 @@ p.bottom2{
   letter-spacing: 0.5px;
   margin-right: 10rem;
  }
-#services {
-  margin-left: 21%;
- }
 .services, .vis {
   margin-right: 0.2rem;
   width: 3rem;
@@ -592,7 +589,10 @@ h4 {
   margin-bottom: 10px;
   font-size: 0.9rem;
 }
- .edu, .con, #services{
+.con, #services{
+  margin-left: 20%;
+}
+.edu {
   margin-left: 20%;
 }
 .skills .underline h1::after {
@@ -1127,7 +1127,7 @@ ul#nav {
 }
 h2.skills {
   font-size: 1.5rem;
-  margin-left: 2.5rem;
+  margin-left: 1rem;
 }
 .container {
   width: 70%;
@@ -1177,7 +1177,7 @@ p.bottom2 {
   display: none !important;
 }
 #about {
-  margin-left: 2.5rem;
+  margin-left: 1rem;
 }
 #myForm {
   width: 134%;
@@ -1207,14 +1207,11 @@ p.par2 {
  margin-left: .5rem;
 }  
 h2.m365 {
-  margin-left: 2.5rem;
+  margin-left: 1rem;
 }
-h2#resume, h2.rel, h2#contact {
-  margin-left: 2.5rem;
+h2.rel, h2#contact {
+  margin-left: 1rem;
 }  
-.edu, .cert {
-  margin-left: 2.5rem;
-}
 .relevant {
   margin: 0;
 }
@@ -1241,7 +1238,7 @@ p.par, p.par3 {
   width: 70%;
 }
 #services {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 #portfolio {
   margin: 0 auto;
@@ -1273,6 +1270,7 @@ p.par, p.par3 {
 }
 .navi {
   display: flex;
+  margin-left: 1rem;
 }
 .pic, #small2, .small2, #nav  {
   display:none ;
@@ -1364,6 +1362,12 @@ div.tytul {
 
 }
 @media screen and (max-width: 480px) { 
+.edu {
+  margin-left: 1rem;
+}
+h2#resume {
+  margin-left: 1rem;
+}
 #mobile {
   display: block;
 }
