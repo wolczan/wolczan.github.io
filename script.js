@@ -55,14 +55,35 @@ function showMessage() {
   alert("Thank you for your message! I'll get back to you soon.");
 }
 
-const backToTopButton = document.querySelector('#back-to-top');
+/*const backToTopButton = document.querySelector('#back-to-top');
 window.addEventListener('scroll', () => {
   if (window.pageYOffset > 400) { // Change the value to adjust the scroll position at which the element should appear
     backToTopButton.style.display = 'block';
   } else {
     backToTopButton.style.display = 'none';
   }
-});   
+});     */
+
+const backToTopButton = document.querySelector('#back-to-top');
+let shouldDisplayButton = false;
+
+function toggleBackToTopButton() {
+  if (window.pageYOffset > 400) {
+    shouldDisplayButton = true;
+  } else {
+    shouldDisplayButton = false;
+  }
+
+  if (shouldDisplayButton) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+}
+
+window.addEventListener('scroll', toggleBackToTopButton);
+
+
 
 function resetForm() {
   document.getElementById("myForm").reset();
