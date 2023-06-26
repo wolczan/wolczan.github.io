@@ -270,20 +270,6 @@ input[type="text"] {
   background-size: cover;
   background-position: center;
 }
-.small2 {
-  transform: scale(0.5);
-  margin-top: -6rem;
-  margin-left: 4.5%;
-  width: 50%;
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease-in-out; 
-  outline: 0,5px solid black;
-}
-.small2:hover {
-  transform: scale(0.55);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); 
-}
 img#small2 {
   margin-top: 1rem;
  }
@@ -298,6 +284,20 @@ img#small2 {
 }
 #small2:hover {
   box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
+.small2 {
+  transform: scale(0.5);
+  margin-top: -6rem;
+  margin-left: 4.5%;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out; 
+  outline: 0,5px solid black;
+}
+.small2:hover {
+  transform: scale(0.55);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); 
 }
 .dropbtn {
 	background-color: #ffffff;
@@ -717,6 +717,23 @@ h4 {
 .certy {
   display: flex;
   flex-direction: row;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+#mobile {
+  margin-right: 20px;
+  margin-top: 10px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #0078D7; /* Microsoft's primary color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
 }
 #maps {
   display:flex;
@@ -1139,9 +1156,8 @@ p.bottom2 {
   flex-direction: column;
 }
 .mapy {
-  width: 23rem;
+  width: 21rem;
   height: 250px;
-  border: 0;
 }
 .rectangle {
   margin: 0;
@@ -1157,6 +1173,9 @@ p.bottom2 {
 }
 }
 @media (max-width: 768px) { 
+#back-to-top {
+  display: none !important;
+}
 #about {
   margin-left: 2.5rem;
 }
@@ -1167,7 +1186,6 @@ p.bottom2 {
   background-color: #f2f2f2;
   border: 1px solid #ccc;
   border-radius: 5px;
-
 }
 p.par {
   width: 100%;
@@ -1294,13 +1312,16 @@ div.tytul {
   padding: 0;
   margin-right: 3rem;
   margin-left: 0.8rem;
-  }
+}
 .certy {
   flex-direction: column;
 } 
 .movi {
   margin-left: 1rem;
   margin-top: 1rem;
+}
+#mobile {
+  display: block;
 }
 .underline h1::after {
   content: "";
@@ -1340,8 +1361,16 @@ div.tytul {
   bottom: 10;
   background-color: #149ddd;
 }
+
 }
 @media screen and (max-width: 480px) { 
+#mobile {
+  display: block;
+}
+div.flex {
+  align-content: stretch;
+  justify-content: space-between;
+}
 .tytul {
   display: flex;
   flex-direction: column;
@@ -1375,6 +1404,7 @@ div.tytul {
   margin: auto;
 }
 .rectangle2 {
+  width: 23rem;
   height: 100%; 
   margin: auto;
 }
