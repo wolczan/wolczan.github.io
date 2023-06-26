@@ -187,7 +187,6 @@ input[type="text"] {
   min-height: 720px;
   height: 100vh;
   background-image: url("https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg");
-  /* overflow-x:auto; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -438,12 +437,12 @@ i:hover {
 }
 #about {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: 20%
 }
 .text {
   background-color:rgb(255, 255, 255);
   color:black;
-  padding-top: 10px;
   align-items: center;
   max-width: 100%;
 }
@@ -458,13 +457,14 @@ i:hover {
   color:white;
 }
 .button {
+  width: 300px;
   height: 25px;
   background-color: transparent;
   /*border: 3px solid #149ddd;*/
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  margin-left: 80%;
+  margin-left: 78%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -724,7 +724,7 @@ h4 {
 }
 .footer {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 50px 25%;
   color: white;
   background: rgb(131, 124, 124);
@@ -758,7 +758,6 @@ h5 {
 }
 .rectangle2 {
   background-color: #ffffff;
-  height: 31rem;
   width: 33rem;
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 16%);
   }
@@ -844,7 +843,7 @@ img#small {
 #small3, #small4 {
   transition: transform .5s ease;
   height: auto;
-  width: 20%;
+  width: 22%;
 }
 #small4 {
   transition: transform .5s ease;
@@ -1076,9 +1075,6 @@ figure.snip1157 .arrow {
 }
 }
 @media screen and (max-width: 1324px) {
-  .text2, p.par { 
-  margin-left: 20%;
-  }
 .rzad {
   display: flex;
 }
@@ -1148,13 +1144,9 @@ p.bottom2 {
   border: 0;
 }
 .rectangle {
-  width: 25rem;
-  height:32rem;
-}
-.rectangle2 {
-  height: 25rem;
-  width: 100%;
-  margin-left: 9.5rem;
+  margin: 0;
+  margin-left: 10px;
+  width: 90%;
 }
 .wrapper {
   display: inline-flex;
@@ -1165,18 +1157,22 @@ p.bottom2 {
 }
 }
 @media (max-width: 768px) { 
-  #about {
-    margin-left: 2.5rem;
-  }
+#about {
+  margin-left: 2.5rem;
+}
 #myForm {
-    /* Add your styles for the form here */
-    /* For example: */
-    width: 134%;
-    margin: auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 134%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+p.par {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
 }
 p.par3 {
   margin: 0;
@@ -1193,23 +1189,23 @@ p.par2 {
  margin-left: .5rem;
 }  
 h2.m365 {
-  margin-left: 1rem;
+  margin-left: 2.5rem;
 }
-h2#resume, h2.rel, h2#contact, h2#education {
+h2#resume, h2.rel, h2#contact {
   margin-left: 2.5rem;
 }  
 .edu, .cert {
-  margin: 0;
+  margin-left: 2.5rem;
 }
 .relevant {
   margin: 0;
 }
-p.par, p.par3, .text2 {
+p.par, p.par3 {
   margin: 0; 
   padding: 20px; 
 }
 .button {
-  margin-left: 1%;
+  margin-left: 16%;
 }
 .rzad {
   margin: 0;
@@ -1219,7 +1215,6 @@ p.par, p.par3, .text2 {
 .rectangle2 {
   box-sizing: border-box;
   padding: 10px;
-  margin-left: 20%;
 }
 .cont {
   border-radius: 5px;
@@ -1260,7 +1255,6 @@ p.par, p.par3, .text2 {
 }
 .navi {
   display: flex;
-   margin-left: 40%;
 }
 .pic, #small2, .small2, #nav  {
   display:none ;
@@ -1277,16 +1271,12 @@ div.bottom2 {
   margin-left: 10%;
   margin: 0;
 }
-.text2 div { 
-  
-  margin: 0;
-}
-.text2 {
-
+.text2 {  
+  margin:0;
 }
 p.bottom {
-  padding: 20px;
   margin: 0;
+  padding: 20px;
 }
 p.bottom2 {
   max-width: 100%;
@@ -1324,7 +1314,7 @@ div.tytul {
 }
 .right h2::after {
   content: "";
-  width: 18rem;
+  width: 29rem;
   height: 3px;
   display: block;
   position: absolute;
@@ -1365,7 +1355,7 @@ div.tytul {
 }
 .zoom {
   margin: auto;
-  width: 30rem;
+  width: 25rem;
 }
 .show-on-desktop {
   display: none;
@@ -1383,13 +1373,8 @@ div.tytul {
 }
 .rectangle {
   margin: auto;
-  /*width: 70%;
-  height: 50%;
-  margin-left: 2rem; */
 }
 .rectangle2 {
-  /*max-width: 70%; */
-  width: 30rem;
   height: 100%; 
   margin: auto;
 }
