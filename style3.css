@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 * {
-  box-sizing: 0;
+  box-sizing: border-box;
   margin: 0;
   padding:0;
+}
+body {
+  font-family: system-ui;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 .embed-container { 
   position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%;
@@ -47,9 +55,13 @@ p:nth-child(5n) {
   cursor: pointer;
   /* background-image: url("https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg"); */
 }
-nav {
-
-  flex-grow: 1;
+ul.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0; /* Add this line to remove default margin on ul */
+  padding: 0; /* Add this line to remove default padding on ul */
 }
 ul li {
   align-items: center;
@@ -59,6 +71,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-grow: 1;
 }
 .nav li {
   display: inline-block;
@@ -111,14 +124,6 @@ ul li {
   transition: transform 0.3s ease-in-out;
   margin: 0 1px;
 }
-body {
-  font-family: system-ui;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
 .main {
   display: flex;
   flex-direction: row;
@@ -132,7 +137,7 @@ body {
 }
 .text {
   color: white;
-  font-family: "Motserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .text2 {
  color:white;
@@ -509,3 +514,10 @@ h5 {
   height: auto; /* Maintain aspect ratio */
 }
   
+@media screen and (max-width: 1324px) {
+  .container2 {
+    display: none;
+  }
+
+  
+}
