@@ -154,7 +154,7 @@ input[type="text"] {
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
-.skills {
+.skills, #resume {
   margin-left: 20%;
 }
 .wrap2 {
@@ -179,6 +179,9 @@ input[type="text"] {
 }
 .underline {
   overflow-x:hidden;
+}
+#education {
+  
 }
 .pic {
   width: 100%;
@@ -442,16 +445,16 @@ i:hover {
 }
 .text {
   background-color:rgb(255, 255, 255);
-  color:black;
   align-items: center;
   max-width: 100%;
 }
 .button:hover {
+  color: white;
   background-color: #149ddd;
-  /* transform: scale(0.95); */
+  transform: scale(0.95);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); 
-  transition: transform 0.3s ease-in-out;
-  transform: scale(0.95) translateY(1px); 
+  transition: transform 0.1s ease-in-out;
+  transform: scale(0.99) translateY(1px); 
 }
 .button span:hover {
   color:white;
@@ -460,24 +463,24 @@ i:hover {
   width: 300px;
   height: 25px;
   background-color: transparent;
-  /*border: 3px solid #149ddd;*/
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px -1px rgba(66, 68, 90, 1);
+  /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);*/
   margin-left: 78%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .button span {
-  color: black;
+  
   font-weight: bold;
   font-size: 1rem;
   font-weight: 200;
   font-family: helvetica;
 }
-#resume, .rel{
-  margin-left: 20.5%;
+.rel{
+  margin-left: 20%;
 }
 p.par {    
   font-family: 'Times New Roman', Times, serif;
@@ -1096,7 +1099,7 @@ figure.snip1157 .arrow {
   display: flex;
 }
 img.small2 {
-  display:none;
+ 
 }
 .search-bar {
   margin-left: 8rem;
@@ -1173,10 +1176,13 @@ p.bottom2 {
 }
 }
 @media (max-width: 768px) { 
+.edu {
+  margin: 0;
+}
 #back-to-top {
   display: none !important;
 }
-#about {
+#about, #resume, #education {
   margin-left: 1rem;
 }
 #myForm {
@@ -1359,12 +1365,12 @@ div.tytul {
   bottom: 10;
   background-color: #149ddd;
 }
-
+div.flex {
+  align-content: stretch;
+  justify-content: space-between;
+}
 }
 @media screen and (max-width: 480px) { 
-.edu {
-  margin-left: 1rem;
-}
 h2#resume {
   margin-left: 1rem;
 }

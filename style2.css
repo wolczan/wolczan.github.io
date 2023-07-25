@@ -1,0 +1,136 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+* {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c2a3d1;
+}
+
+img {
+    width: 200px;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    color: darkred;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.recipe-card {
+    width: 400px; /* 2 + 50 + 400 + 50 + 2 */
+    text-align: center;
+    background-color: #FFFAFA;
+    margin: 20px auto;
+    padding: 50px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5); 
+}
+
+.recipe-content {
+    text-align: left;
+    padding: 20px;
+}
+
+.recipe-card h2,
+.recipe-card a {
+    text-transform: uppercase;
+}
+
+.recipe-card.feature {
+    border: 2px solid darkred;
+}
+
+ul li h2 {
+    font-size: 16px;
+}
+
+.recipe-card a {
+    background-color: #fc9400;
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px 12px;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
