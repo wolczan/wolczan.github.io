@@ -113,9 +113,9 @@ i.fa-solid.fa-wand-magic-sparkles {
 .search-bar {
   width: 80%;
   max-width: 700px;
-  background: transparent;
+ /* background: transparent; */
   display:flex;
-  padding: 5px 5px;
+  padding: 1px 1px;
 }
 .search-bar input {
   background: transparent;
@@ -123,6 +123,7 @@ i.fa-solid.fa-wand-magic-sparkles {
   border: 0;
   padding: 1px 2px;
   font-size: 1.2rem; 
+  border: 1px solid rgb(22, 22, 22);
 }
 ::placeholder {
   color: white;
@@ -134,16 +135,19 @@ i.fa-solid.fa-wand-magic-sparkles {
   width: 20px;
   cursor: pointer;
   margin-left: -2rem;
+  
 }
 .search-bar button {
   border: 0;
   border-radius: 10%;
   cursor:pointer;
   background: transparent;
+  
 }
 input[type="text"] {
   caret-color: white;
-  color: white;
+  color: black;
+ 
 }
 .thumb:hover {
   font-style:black;
@@ -466,7 +470,13 @@ i:hover {
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0px 0px 13px -1px rgba(66, 68, 90, 1);
-  /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);*/
+  /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); 
+  transition: transform 0.1s ease-in-out;
+  transform: scale(0.99) translateY(1px); 
+  
+  */
+
   margin-left: 78%;
   display: flex;
   justify-content: center;
@@ -882,15 +892,15 @@ img#small {
 }
 input#search-input {
   border-radius: 2rem;
-  border: 1px solid #332d2d;
   padding: 0.1rem;
   margin-top: 1rem;
   padding-left: 10px;
+  
 }
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+ /* border: 1px solid black; */
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -1138,7 +1148,7 @@ h2.skills {
   width: 70%;
 }
 div.container {
-  margin-left: 10%;
+ 
 }
 .test-grid {
   width:min(65%, 45rem );
@@ -1167,7 +1177,7 @@ p.bottom2 {
 .rectangle {
   margin: 0;
   margin-left: 10px;
-  width: 90%;
+  width: 70%;
 }
 .wrapper {
   display: inline-flex;
@@ -1236,7 +1246,7 @@ p.par, p.par3 {
   margin-left: 3rem;
 }
 .rectangle2 {
-  width: 80%;
+  width: 70%;
   box-sizing: border-box;
   padding: 10px;
   
