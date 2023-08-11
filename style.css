@@ -184,9 +184,6 @@ input[type="text"] {
 .underline {
   overflow-x:hidden;
 }
-#education {
-  
-}
 .pic {
   width: 100%;
   margin-left: 14%;
@@ -590,7 +587,9 @@ p.bottom2{
 }
 h3{
   padding-bottom: 10px;
-  font-size: 20px;
+}
+.custom-h3 {
+  font-size: 1em;
 }
 h4 {
   background-color: #d9e4f6;
@@ -794,7 +793,7 @@ h5 {
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 16%);
   }
 .mapy {
-  width: 30rem;
+  width: 33rem;
   height: 240px;
   border: 0;
   margin-left: 4%;
@@ -1082,7 +1081,9 @@ figure.snip1157 .arrow {
   display: none;
 }
 @media screen and (max-width: 2560px) {
-
+  .mapy {
+    width: 27rem;
+  }
 #nav {
   height: 100%;
   width: 14%;
@@ -1109,9 +1110,6 @@ figure.snip1157 .arrow {
 @media screen and (max-width: 1324px) {
 .rzad {
   display: flex;
-}
-img.small2 {
- 
 }
 .search-bar {
   margin-left: 8rem;
@@ -1147,11 +1145,8 @@ h2.skills {
 .container {
   width: 70%;
 }
-div.container {
- 
-}
 .test-grid {
-  width:min(65%, 45rem );
+  width:min(65%, 45rem);
 }
 .movi {
   margin-top: -5rem;
@@ -1171,7 +1166,7 @@ p.bottom2 {
   flex-direction: column;
 }
 .mapy {
-  width: 21rem;
+  width: 31rem;
   height: 250px;
 }
 .rectangle {
@@ -1186,8 +1181,18 @@ p.bottom2 {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.mapy {
+ 
+}
 }
 @media (max-width: 768px) { 
+ .jirka {
+  width: 25%;
+  margin-left: -5%
+ } 
+.mapy {
+  width: 20rem;
+}
 .edu {
   margin: 0;
 }
@@ -1203,7 +1208,6 @@ p.bottom2 {
   background-color: #f2f2f2;
   border: 1px solid #ccc;
   border-radius: 5px;
-  
 }
 p.par {
   width: 100%;
@@ -1245,11 +1249,14 @@ p.par, p.par3 {
   padding: 0;
   margin-left: 3rem;
 }
+.rectangle {
+  margin: 0 auto;
+  width: 80%;
+}
 .rectangle2 {
-  width: 70%;
-  box-sizing: border-box;
+  width: 80%;
   padding: 10px;
-  
+  margin: 0 auto;
 }
 .cont {
   border-radius: 5px;
@@ -1317,17 +1324,17 @@ p.bottom {
 p.bottom2 {
   max-width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
 div.tytul {
   width:100%;
   margin-left: 1rem;
+  padding: 10px;
 }
 .mov {
-  width: 50%;
   width: 90%;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   margin-right: 3rem;
   margin-left: 0.8rem;
 }
@@ -1434,6 +1441,7 @@ div.flex {
 .rectangle2 {
   height: 100%; 
   margin: auto;
+  width: 80%;
 }
 .cont {
   border-radius: 15px;
