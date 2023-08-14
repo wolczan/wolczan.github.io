@@ -389,23 +389,28 @@
       </div>
       <div class="rectangle2">
         <div class="cont">
-          <form id="myForm" action="mailto:abc@gmail.com" method="post" action="form.php"
-            enctype="text/plain" onsubmit="showMessage()">
+          <form id="myForm" action="C:/wamp64/www/form.php" method="post"
+            enctype="text/plain">
+              <!-- onsubmit="showMessage()" -->   
             <label for="fname"> Your Name</label>
             <input type="text" id="fname" name="firstname" placeholder="">
 
             <label for="lname">Your Email</label>
             <input type="text" id="lname" name="lastname" placeholder="">
+
             <label for="country">Type of enquiry</label>
-            <select id="country" name="">
-              <option value="australia">Consultancy</option>
-              <option value="canada">Job offer</option>
-              <option value="canada">Feedback</option>
-              <option value="canada">Other</option>
+            <select id="type" name="">
+              <option value="Consultancy">Consultancy</option>
+              <option value="Job offer">Job offer</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Other">Other</option>
             </select>
+
             <label for="subject">Meassage</label>
             <textarea id="subject" name="subject" placeholder=""></textarea>
-            <input type="submit" onclick="resetForm()" title=" submit" value="Send Message">
+
+            <button type="button" id="submitButton" onclick="resetForm()" title="Submit">Send Message</button>
+
           </form>
         </div>
       </div>

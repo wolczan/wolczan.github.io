@@ -11,7 +11,10 @@ html {
   margin: 0;
   padding: 0; 
   text-decoration: none;
-}
+} 
+.active {
+ border: 1px solid red;
+}  
 li:hover i.fa-solid.fa-house,
 li:hover i.fa-regular.fa-user,
 li:hover a[href="#home"],
@@ -894,7 +897,6 @@ input#search-input {
   padding: 0.1rem;
   margin-top: 1rem;
   padding-left: 10px;
-  
 }
 input[type=text], select, textarea {
   width: 100%;
@@ -906,7 +908,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-input[type=submit] {
+#submitButton {
   background-color: #149ddd;
   color: white;
   padding: 8px 20px;
@@ -916,7 +918,7 @@ input[type=submit] {
   display: block; /* set the display property to block */
   margin: 0 auto; /* set the left and right margin to auto */
 }
-input[type=submit]:hover {
+#submitButton:hover {
   background-color: #0c658f;
 }
 .cont {
@@ -1181,9 +1183,6 @@ p.bottom2 {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.mapy {
- 
-}
 }
 @media (max-width: 768px) { 
  .jirka {
@@ -1191,7 +1190,7 @@ p.bottom2 {
   margin-left: -5%
  } 
 .mapy {
-  width: 20rem;
+  width: 24rem;
 }
 .edu {
   margin: 0;
@@ -1203,7 +1202,7 @@ p.bottom2 {
   margin-left: 1rem;
 }
 #myForm {
-  width: 20rem;
+  width: 24rem;
   padding: 20px;
   background-color: #f2f2f2;
   border: 1px solid #ccc;
@@ -1251,10 +1250,10 @@ p.par, p.par3 {
 }
 .rectangle {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
 }
 .rectangle2 {
-  width: 80%;
+  width: 85%;
   padding: 10px;
   margin: 0 auto;
 }
