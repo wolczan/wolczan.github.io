@@ -182,10 +182,8 @@ e.preventDefault();
       document.body.appendChild(css);
   };
   
-
-
   var nav = document.getElementById("nav");
-  var icons = nav.getElementsByTagName("i");
+  /*var icons = nav.getElementsByTagName("i"); */
   var links = nav.getElementsByTagName("a");
   
   // Set the initial active class based on the current page URL
@@ -210,6 +208,27 @@ e.preventDefault();
      this.classList.add("active");
    });
  }
+
+
+ function showMessage() {
+  var name = encodeURIComponent(document.getElementById('fname').value);
+  var email = encodeURIComponent(document.getElementById('lname').value);
+  var enquiryType = encodeURIComponent(document.getElementById('type').value);
+  var message = encodeURIComponent(document.getElementById('subject').value);
+
+  var subject = "Enquiry from " + name + " (" + enquiryType + ")";
+  var body = "Name: " + name + "\nEmail: " + email + "\nEnquiry Type: " + enquiryType + "\n\nMessage:\n" + message;
+
+  window.location.href = 'mailto:abc@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+}
+
+function resetForm() {
+  showMessage(); // Call showMessage first
+  document.getElementById('myForm').reset();
+}
+
+document.getElementById('submitButton').addEventListener('click', resetForm);
+
 
  
 
