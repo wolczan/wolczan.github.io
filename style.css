@@ -13,8 +13,22 @@ html {
   text-decoration: none;
 } 
 .active {
- border: 1px solid red;
+  background-color: #1E90FF;
+  color: black;
+  cursor: pointer;
+  padding: 5px 5px;
+  border: 2px solid transparent;
+  border-radius: 18px;
 }  
+#nav i:not(.wrapper i) {
+  background-color: #1E90FF;
+  color: black;
+  cursor: pointer;
+  padding: 5px 5px;
+  border: 2px solid transparent;
+  border-radius: 18px;
+}
+
 li:hover i.fa-solid.fa-house,
 li:hover i.fa-regular.fa-user,
 li:hover a[href="#home"],
@@ -161,6 +175,15 @@ input[type="text"] {
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
+.thumb.active {
+  font-style:black;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}  
 .skills, #resume {
   margin-left: 20%;
 }
@@ -193,7 +216,7 @@ input[type="text"] {
   max-width: 86%;
   min-height: 720px;
   height: 100vh;
-  background-image: url("https://live.staticflickr.com/65535/52663134520_8c36612769_z.jpg");
+  background-image: url("Assets/mac.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -432,9 +455,6 @@ li i{      /* ikonki */
  color:#ffffff;
 }
 a:hover {
-  color: #0c68e1;
-}
-i:hover {
   color: #0c68e1;
 }
 .lista {
