@@ -1,3 +1,28 @@
+var nav = document.getElementById("nav");
+var links = nav.getElementsByTagName("a");
+
+// Function to add "active" class to a link and its previous sibling
+function setActiveLink(link) {
+    // Remove "active" class from all links
+    for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove("active");
+    }
+    
+    // Add "active" class to the clicked link and its previous sibling
+    link.classList.add("active");
+    var previousSibling = link.previousElementSibling;
+    if (previousSibling) {
+        previousSibling.classList.add("active");
+    }
+}
+
+// Add click event listeners to the links
+for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function(event) {
+        setActiveLink(this);
+    });
+}
+
 
 function submitSearch(event) {
   event.preventDefault(); // prevent form submission
@@ -49,12 +74,6 @@ let intervalId = setInterval(() => {
   }
 }, 27);
 
-
-
-function showMessage() {
-  alert("Thank you for your message! I'll get back to you soon.");
-}
-
 /*const backToTopButton = document.querySelector('#back-to-top');
 window.addEventListener('scroll', () => {
   if (window.pageYOffset > 400) { // Change the value to adjust the scroll position at which the element should appear
@@ -68,7 +87,7 @@ const backToTopButton = document.querySelector('#back-to-top');
 let shouldDisplayButton = false;
 
 function toggleBackToTopButton() {
-  if (window.pageYOffset > 400) {
+  if (window.scrollY > 400) {
     shouldDisplayButton = true;
   } else {
     shouldDisplayButton = false;
@@ -83,17 +102,47 @@ function toggleBackToTopButton() {
 
 window.addEventListener('scroll', toggleBackToTopButton);
 
+ // Scroll the page to the top when the page is loaded
+ document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+      window.scrollTo(0, 0);
+  }, 500); // Adjust the delay time as needed
+});
 
 
-function resetForm() {
-  document.getElementById("myForm").reset();
-}
-// Form details reset 
 
-let my1function = (name) => {
-    console.log("Witaj ' + name + ' !");
-}; // myFunction("John");
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
+  var delay = 1000;
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      // Get the target element's top position
+      document.cookie = "user_preferences=value; SameSite=None; Secure";
+     
+
+      
+      var target = document.querySelector(this.getAttribute('href')); 
+      var top = target.getBoundingClientRect().top + window.scrollY;
+      
+      // Scroll to the target element's position with a smooth effect
+      window.scrollTo({
+          top: top,
+          behavior: 'smooth'
+      });
+      
+      // Add a delay before scrolling to the target element
+      setTimeout(function() {
+          window.location.hash = this.getAttribute('href');
+      }.bind(this), delay);
+    }); // <-- Closing brace for anchor event listener
+  });
+}); // <-- Closing brace for DOMContentLoaded event listener
+
+
+
+
+  window.onload = function() {
     window.scrollTo(0, 0);
   };
   function scrollToTop() {
@@ -101,29 +150,7 @@ window.onload = function() {
       top: 0,
       behavior: "smooth"
     });
-  }  // Scroll the page to the top when the page is loaded
-
-
-var delay = 1000;
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function (e) {
-e.preventDefault();
-// Get the target element's top position
-          var target = document.querySelector(this.getAttribute('href'));
-          var top = target.getBoundingClientRect().top + window.pageYOffset;
-          
-          // Scroll to the target element's position with a smooth effect
-          window.scrollTo({
-              top: top,
-              behavior: 'smooth'
-          });
-          
-          // Add a delay before scrolling to the target element
-          setTimeout(function() {
-              window.location.hash = this.getAttribute('href');
-          }.bind(this), delay);
-      });
-  });
+  } 
   
   var TxtType = function(el, toRotate, period) {
       this.toRotate = toRotate;
@@ -182,34 +209,7 @@ e.preventDefault();
       document.body.appendChild(css);
   };
   
-  var nav = document.getElementById("nav");
-  /*var icons = nav.getElementsByTagName("i"); */
-  var links = nav.getElementsByTagName("a");
   
-  // Set the initial active class based on the current page URL
-  var currentPage = window.location.href;
-  for (var i = 0; i < links.length; i++) {
-    var link = links[i];
-    if (currentPage.indexOf(link.getAttribute("href")) !== -1) {
-      link.classList.add("active");
-      link.previousElementSibling.classList.add("active");
-      break;
-    }
-  }
-  
-
- //Active class on click
- var nav = document.getElementById("nav");
- var icons = nav.getElementsByTagName("i");
- for (var i = 0; i < icons.length; i++) {
-   icons[i].addEventListener("click", function() {
-     var current = nav.getElementsByClassName("active");
-     current[0].className = current[0].className.replace(" active", "");
-     this.classList.add("active");
-   });
- }
-
-
  function showMessage() {
   var name = encodeURIComponent(document.getElementById('fname').value);
   var email = encodeURIComponent(document.getElementById('lname').value);
