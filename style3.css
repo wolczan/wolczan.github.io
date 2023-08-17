@@ -79,9 +79,10 @@ ul li {
 .nav li a:hover {
  color: #0088a9;
 }
-.container2 {
-  padding: 9px 25px; 
-  border: none;
+div.container2 {
+  
+  border: 1px solid red;
+
 }
 .nav a {
   color: white;
@@ -95,7 +96,7 @@ ul li {
 .search-bar input[type="text"] {
   border-radius: 18px;
   border: none;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   padding-left: 10px; 
 }
 .search-bar button {
