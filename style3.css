@@ -79,11 +79,6 @@ ul li {
 .nav li a:hover {
  color: #0088a9;
 }
-div.container2 {
-  
-  border: 1px solid red;
-
-}
 .nav a {
   color: white;
   text-decoration: none;
@@ -275,7 +270,7 @@ h5 {
 .cart {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   font-family: "Motserrat", sans-serif;
   color: white;
@@ -315,9 +310,6 @@ h5 {
   object-fit: cover;
 }
 @media only screen and (min-width: 50em) {
-#show_bg_2  {
-
-}
 .even-columns {
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
@@ -330,6 +322,24 @@ h5 {
 }
 .with-sidebar {
   grid-template-columns: 1fr 20rem;
+}
+.vacation {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%; /* Set maximum width for the container */
+            margin: 0 auto; /* Center the container horizontally */
+            
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+}
+.vacation img {
+  max-width: 17%; /* Set maximum width for individual images */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin: 0 5px;
 }
 .header {
   padding-block: max(1vh, 0.5rem);
