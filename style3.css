@@ -154,9 +154,9 @@ ul li {
   align-items: center;
 }
 .container {
-  max-width: 70rem;
+  max-width: 30rem;
   overflow-x: hidden;
-  flex: 0 0 80%;
+  flex: 0 0 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,10 +164,13 @@ ul li {
   margin-bottom: 30px;
 }
 .container3 {
-  flex: 0 0 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .search-bar {
   display: flex;
@@ -193,17 +196,30 @@ h5 {
   font-weight: inherit;
 }
 .card__img {
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+   /* Add transition for smooth effect */
 }
 .card__img:hover {
   transform: scale(1.1); /* Specify the desired scale transformation on hover */
 } 
+.cart img {
+  max-width: 100%; /* Set the maximum width to ensure responsiveness */
+  height: auto; /* Maintain the aspect ratio of the image */
+  border: 2px solid #ccc; /* Add a border to the image */
+  border-radius: 5px; /* Add rounded corners to the image */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a box shadow to the image */
+  margin-top: 10px; /* Add spacing above the image */
+}
 #show_bg_2 {
+  display: flex;
   background-image:
   linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
   url('#');
-  width: 80%;
-  height: 300px;
+  width: 200%;
+  height: 100px;
   background-size: cover;
   color: white;
   padding: 20px;
@@ -214,6 +230,9 @@ h5 {
 .art.jir {
   position: relative;
   bottom: 15rem; /* Adjust this value to move the element up */
+}
+article.content {
+  width: 50%;
 }
 .post {
   display: flex;
@@ -251,6 +270,7 @@ h5 {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
  /* background-color: rgb(238, 225, 225); */
@@ -275,6 +295,7 @@ h5 {
   font-family: "Motserrat", sans-serif;
   color: white;
   width: 20rem;
+  
 }
 .grid p {
   font-size: 1rem;
@@ -324,22 +345,34 @@ h5 {
   grid-template-columns: 1fr 20rem;
 }
 .vacation {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   max-width: 100%; /* Set maximum width for the container */
-            margin: 0 auto; /* Center the container horizontally */
-            
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
+  margin: 0 auto; /* Center the container horizontally */  
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 5%;
+
 }
 .vacation img {
-  max-width: 17%; /* Set maximum width for individual images */
+ 
+  max-width: 60%; /* Set maximum width for individual images */
   height: auto; /* Maintain aspect ratio */
   border: 2px solid gray;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin: 0 5px;
+  margin-right: -10px;
+ 
+}
+@media screen and (max-width: 768px) {
+  .vacation img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%; /* Adjust the maximum width for small screens */
+    margin: 0 10px; /* Adjust the spacing between images */
+    margin-bottom: 20px;
+  }
 }
 .header {
   padding-block: max(1vh, 0.5rem);
@@ -410,18 +443,21 @@ h5 {
   }
   
 .casestudies {
-    align-items: stretch;
-    display:grid;
+    display: flex;
+    flex-wrap: wrap;
+    /*display:grid;
+    grid-gap: 125px;
     grid-area: casestudies;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    justify-self: stretch;
-    margin:0 auto;
-    max-width: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%; */
 }
 .content{
   position: relative;
   overflow: hidden;
+  flex: 1; /* Allow items to grow to fill the available space */
+  max-width: 200px; /* Adjust the maximum width of each item */
+  text-align: center; /* Center-align the content */
+  margin: 5px; /* Adjust margin as needed */
 }
 .rest {
   text-align:center;
@@ -434,8 +470,8 @@ h5 {
 .content .content-overlay {
     background: rgba(0,0,0,0.7);
     position: absolute;
-    width: 81%; /* Adjust the width to match the image size */
-    height: 65%; /* Adjust the height to match the image size */
+    width: 100%; /* Adjust the width to match the image size */
+    height: 100%; /* Adjust the height to match the image size */
     opacity: 0;
     margin: 0;
     padding: 0;
@@ -446,10 +482,11 @@ h5 {
     cursor: pointer;
 }
 .content-image{
-    width: auto;
-    height:auto;
-    max-width: 80%;
-    max-height: 95%;
+  width: 100%;
+  height:auto;
+  border: 2px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .content-details {
     position: absolute;
@@ -477,18 +514,18 @@ h5 {
   margin-bottom: 0.5rem;
 }
 .content-details p{
-  color: #F4FAFF;
+  color: #F4FAFF; 
   font-size: 1rem;
 }
 .fadeIn-bottom{
   top: 80%;
 }
 .content .content-details .content-title {
-  width: 70%;
+  width: 100%;
   height: 30%;
 }
 .content-text {
-  width: 70%;
+  width: 100%;
   height: 50%;
 }
 .search-bar button img {
