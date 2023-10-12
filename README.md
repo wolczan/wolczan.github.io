@@ -17,3 +17,6 @@ Alternatively, you can clone the repository to your local machine and open the i
 Contributions If you find any bugs or issues with the website, please feel free to submit a pull request or create an issue on Github.
 
 Thank you for checking out my portfolio project!
+
+![image](https://github.com/wolczan/wolczan.github.io/assets/115068312/7ae44932-f221-4b5d-81d2-9ebdecbdbd37)
+
