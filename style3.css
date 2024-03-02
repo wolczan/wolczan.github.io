@@ -238,6 +238,7 @@ article.content {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 25px;
 }
 .container {
   max-width: 70rem;
@@ -277,7 +278,7 @@ article.content {
   padding-block: max(1vh, 1rem);
   text-align: center;
   justify-content: center;
-  padding: 5px;
+  padding-bottom: 15px;
 }
 .grid img {
   max-width: 80%;
@@ -294,7 +295,7 @@ article.content {
   align-items: center;
   font-family: "Motserrat", sans-serif;
   color: white;
-  width: 20rem;
+  width: 15rem;
   
 }
 .grid p {
@@ -344,35 +345,38 @@ article.content {
 .with-sidebar {
   grid-template-columns: 1fr 20rem;
 }
-.vacation {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  max-width: 100%; /* Set maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */  
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 5%;
 
+.vacation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+  justify-content: center; /* Center images horizontally within the container */
+  align-items: center;
+  
+  overflow-x: hidden;
 }
+
 .vacation img {
- 
-  max-width: 60%; /* Set maximum width for individual images */
+  max-width: 100%; /* Set maximum width to 100% to fit within the container */
   height: auto; /* Maintain aspect ratio */
   border: 2px solid gray;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-right: -10px;
- 
+  margin: 15px; /* Adjust margin as needed */
+
+  /* Add the following line to control image size */
+  width: 15%; /* Adjust the percentage as needed to make the images smaller */
 }
 @media screen and (max-width: 768px) {
   .vacation img {
     display: flex;
     flex-wrap: wrap;
-    width: 80%; /* Adjust the maximum width for small screens */
+    width: 50%; /* Adjust the maximum width for small screens */
     margin: 0 10px; /* Adjust the spacing between images */
     margin-bottom: 20px;
-  }
+    width: 35%;
+  
+}
 }
 .header {
   padding-block: max(1vh, 0.5rem);
@@ -550,6 +554,7 @@ article.content {
   font-size: 14px; /* Specify the desired font size */
   color: white; /* Specify the desired text color */
   font-family: "Motserrat", sans-serif;
+  width: 15rem;
 }
 .cart:nth-child(1) img {
   width: 200px; /* Specify the desired width for the first cart's image */

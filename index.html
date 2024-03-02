@@ -62,22 +62,26 @@
           </form>
         </div>
         <div class="wrap2">Hi, I'm Maciej Libera</div>
-        <h1 class="wrap3"><a href="mac.html" class="typewrite" title="intro" data-period="500"
-            data-type='[ "System Admin", "Web Developer"]'></a></h1>
+        <h1 class="wrap3">
+          <a href="mac.html" class="typewrite" title="intro" data-period="500"
+              data-type='[ "System Admin", "Web Developer"]'>
+              Your Text Goes Here
+          </a>
+      </h1>
       </div>
     <div class="right-section">
       <div class="underline">
         <div class="flex">
-          <h2 id="about">About</h2>
+          <h2 id="about">About Me</h2>
           <img id="mobile" src="Assets/mac.jpg" title="Maciej Libera" href="portfolio.html">
         </div>
           <div class="text">   
-            <p class="par">Highly motivated IT professional with nearly 4 years of successful experience in supporting various hybrid environments and performing
+            <p class="par">Highly motivated IT professional with over 4 years of successful experience in supporting various hybrid environments and performing
                 administrative and development tasks. In-depth knowledge of standard office procedures with proficient use of Microsoft 365 Suite. Determined to succeed with aspirations to be a web developer.<br> I spend most days designing and building web projects 
                 applications.
               </p>
              <div class="button" onclick="window.open('gallery.html', '_blank')">
-              <span>Responsive Image Gallery</span>
+              <span>Image Gallery</span>
             </div><br>
           </div>
         </div>
@@ -289,12 +293,47 @@
             <div class="arrow"></div>
           </blockquote>
         </figure>
-      </div><br>
+      </div>
+     
+      <div class="flex2">
+        <div class="weather-card">
+          <div class="weather-header">
+              <h2 class="weather-title">Manchester Weather Info</h2>
+          </div>
+              <p class="weather-data" id="temperature">Temperature: </p>
+              <p class="weather-data" id="description">Weather Description: </p>
+              <p class="weather-data" id="humidity">Humidity: </p>
+              <p class="weather-data" id="wind">Wind Speed: </p>
+              <p class="weather-data" id="pressure">Pressure: </p>
+              <p class="weather-data" id="sunrise">Sunrise: </p>
+              <p class="weather-data" id="sunset">Sunset: </p>
+          <div class="weather-additional-info">
+              <!-- Add additional weather information elements here -->
+          </div>
+      </div>
+      
+          <div class="weather-card">
+            <div class="weather-header">
+                <h2 class="weather-title">Lodz Weather Info</h2>
+            </div>
+            <p class="weather-data" id="temperature2">Temperature: </p>
+            <p class="weather-data" id="description2">Weather Description: </p>
+            <p class="weather-data" id="humidity2">Humidity: </p>
+            <p class="weather-data" id="wind2">Wind Speed: </p>
+            <p class="weather-data" id="pressure2">Pressure: </p>
+            <p class="weather-data" id="sunrise2">Sunrise: </p>
+            <p class="weather-data" id="sunset2">Sunset: </p>
+            <div class="weather-additional-info">
+                <!-- Add additional weather information elements here -->
+            </div>
+          </div>
+        </div>
+      
+
+
         <div class="serv">
           <h2 id="services">Services</h2>
         </div>
-      <br><br>
-
       <div class="test-grid">
         <div class="art grid-span-2">
           <div class="title">
@@ -424,5 +463,6 @@
    <!--  .doc right-section-->
 
   <script src="script.js"></script> <!---->
+  <script src="weather.js"></script>
 </body>
 </html>

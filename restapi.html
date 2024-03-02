@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API page</title>
+    <link rel="stylesheet" href="rest.css">
+    <script src="https://kit.fontawesome.com/2680b8473e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="Assets/mac.jpg">
+  <script src="subscribe.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1> .NET assemblies in PowerShell</h1>
+        <p>By loading these assemblies in PowerShell using the Add-Type cmdlet, you make the classes and methods within these assemblies available for use in your PowerShell scripts.<br> This allows you to automate various SharePoint-related tasks or perform custom SharePoint operations from your PowerShell environment</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Microsoft.SharePoint.Client.UserProfiles.dll</a></li>
+            <li><a href="/about">Microsoft.SharePoint.Client.dll</a></li>
+            <li><a href="/contact">Microsoft.SharePoint.Client.Runtime.dll</a></li>
+        </ul>
+    </nav>
+
+    <main>
+      <input type="text" placeholder="Cost of order">
+      <button onclick = "" class="subscribe-button" >Calculate</button>
+      <button onclick = "subscribe();"class ="js-subscribe-button">Subscribe</button>
+
+        <article>
+            <h2>Blog Post Title</h2>
+            <p>Posted on <time datetime="2023-09-15">September 15, 2023</time> by <a href="/author">Author Name</a></p>
+            <img src="Assets/sp.png" alt="Blog Post Image" class="gdansk">
+            <p>Load .NET assemblies in PowerShell using the Add-Type cmdlet. These assemblies are related to SharePoint and are used for interacting with SharePoint programmatically</p>
+            <p>Make sure that the file paths are accurate and that the DLL files exist in the specified locations</p>
+            <p>Once you've loaded these assemblies, you can use the classes and methods they provide to work with SharePoint data</p>
+            <p>Microsoft.SharePoint.Client.UserProfiles.dll: This assembly provides classes and methods for working with user profiles in SharePoint. It allows you to retrieve and manage user profile information in a SharePoint environment. You might use this assembly when you need to access and update user profile data for users in SharePoint</p>
+            <p>Microsoft.SharePoint.Client.dll: This is a core assembly for interacting with SharePoint from a remote client, such as PowerShell or a custom application. It provides classes and methods for performing a wide range of SharePoint operations, including working with lists, libraries, sites, and more. This assembly is often a prerequisite for SharePoint-related tasks in PowerShell</p>
+            <p>Microsoft.SharePoint.Client.Runtime.dll: This assembly contains runtime components that are essential for the functioning of SharePoint client-side code. It provides support for authentication, communication with SharePoint servers, and other runtime features.</p>
+          </article>
+
+        <!-- More articles can go here -->
+
+        <nav>
+            <ul>
+                <li><a href="/page2">2</a></li>
+                <li><a href="/page3">3</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <aside>
+        <section>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="/post1">Post 1</a></li>
+                <li><a href="/post2">Post 2</a></li>
+                <li><a href="/post3">Post 3</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="/category1">Category 1</a></li>
+                <li><a href="/category2">Category 2</a></li>
+                <li><a href="/category3">Category 3</a></li>
+            </ul>
+        </section>
+    </aside>
+
+        
+    <div class="container">
+        <div class="grid-7 element-animation">
+          <!--card-1-->
+          <div class="card color-card">
+            <ul>
+              <li><i class="fas fa-arrow-left i-l w"></i></li>
+              <li><i class="fas fa-ellipsis-v i-r w"></i></li>
+              <li><i class="far fa-heart i-r w"></i></li>
+            </ul>
+            <img src="Assets/wlo.jpg" alt="profile-pic" class="profile">
+            <h1 class="title">Maciej Liberadzki</h1>
+            <p class="job-title"> Junior consultant</p>
+            <div class="desc top">
+              <p>Stay in touch, get to know me via social media</p>
+            </div>
+            <button class="btn color-a top"> Contact me</button>
+      
+            <hr>
+            <div class="container">
+              <div class="content">
+                <div class="grid-2">
+                  <button class="color-b circule"> <i class="fab fa-dribbble fa-2x"></i></button>
+                  <h2 class="title">M365</h2>
+                  <p class="followers">Services</p>
+                </div>
+                <div class="grid-2">
+                  <button class="color-c circule"><i class="fab fa-behance fa-2x"></i></button>
+                  <h2 class="title">Azure</h2>
+                  <p class="followers">Functions</p>
+                </div>
+                <div class="grid-2">
+                  <button class="color-d circule"><i class="fab fa-github-alt fa-2x"></i></button>
+                  <h2 class="title">Frontend</h2>
+                  <p class="followers">Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!--card-2-->
+      
+        <div class="grid-7 element-animation">
+          <div class="card color-card2">
+            <ul>
+              <li><i class="fas fa-arrow-left i-l b"></i></li>
+              <li><i class="fas fa-ellipsis-v i-r b"></i></li>
+              <li><i class="far fa-heart i-r b"></i></li>
+            </ul>
+            <img src="Assets/wlo.jpg" alt="profile-pic" class="profile">
+            <h1 class="title-2">Maciej Liberadzki</h1>
+            <p class="job-title"> Junior consultant</p>
+            <div class="desc top">
+              <p>If you want to find out more get in to touch</p>
+            </div>
+            <button class="btn color-a top"> Contact me</button>
+      
+            <hr class="hr-2">
+            <div class="container">
+              <div class="content">
+                <div class="grid-2">
+                  <button class="color-b circule"> <i class="fab fa-dribbble fa-2x"></i></button>
+                  <h2 class="title-2">M365</h2>
+                  <p class="followers">Services</p>
+                </div>
+                <div class="grid-2">
+                  <button class="color-c circule"><i class="fab fa-behance fa-2x"></i></button>
+                  <h2 class="title-2">Azure</h2>
+                  <p class="followers">Functions</p>
+                </div>
+                <div class="grid-2">
+                  <button class="color-d circule"><i class="fab fa-github-alt fa-2x"></i></button>
+                  <h2 class="title-2">FrontEnd</h2>
+                  <p class="followers">Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+
+
+
+    <footer>
+        <p>&copy; 2023 My Blog. All rights reserved.</p>
+    </footer>
+
+      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+</html>
