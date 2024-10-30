@@ -101,6 +101,17 @@ i.fa-solid.fa-wand-magic-sparkles {
   height: 1.5rem;
   border-radius: 30%;
 }
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap:10px; /* Adds spacing between buttons */
+  justify-content: flex-start; /* Centers buttons horizontally */
+  margin-left: 20%
+}
+.button:hover {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
 #back-to-top {
   display: grid;
   text-decoration: none;
@@ -485,26 +496,23 @@ a:hover {
   color:white;
 }
 .button {
-  width: 300px;
+  width: 200px;
   height: 25px;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 5px;
   box-shadow: 0px 0px 13px -1px rgba(66, 68, 90, 1);
-  /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); 
-  transition: transform 0.1s ease-in-out;
-  transform: scale(0.99) translateY(1px); 
-  
-  */
-
-  margin-left: 78%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 20px; /* Adjusts padding to make the button more clickable */
+  border: 1px solid #ccc; /* Adds a border to resemble a button */
+  border-radius: 5px; /* Rounds the corners slightly */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  white-space: nowrap; /* Prevents text from wrapping */
+  flex-shrink: 0; /* Prevents button from shrinking */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 .button span {
-  
   font-weight: bold;
   font-size: 1rem;
   font-weight: 200;
@@ -658,7 +666,7 @@ h4 {
 }
 .line h2::after {
   content: "";
-  width: 4rem;
+  width: 3.4rem;
   height: 3px;
   display: block;
   position: absolute;
@@ -705,7 +713,7 @@ h4 {
 }
 .con h2::after {
   content: "";
-  width: 5rem;
+  width: 5.2rem;
   height: 3px;
   display: block;
   position: absolute;
@@ -1233,6 +1241,24 @@ p.bottom2 {
 }
 }
 @media (max-width: 768px) { 
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Optional: Adjust spacing between buttons for vertical layout */
+
+  }
+  .button {
+    cursor: pointer;
+    
+    border: 1px solid #ccc; /* Adds a border to resemble a button */
+    border-radius: 5px; /* Rounds the corners slightly */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    white-space: nowrap; /* Prevents text from wrapping */
+    flex-shrink: 0; /* Prevents button from shrinking */
+    
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    width: 300px; /* Fixed width for buttons */
+    
+  }
  .jirka {
   width: 25%;
   margin-left: -5%
@@ -1288,9 +1314,7 @@ p.par, p.par3 {
   margin: 0; 
   padding: 20px; 
 }
-.button {
-  margin-left: 16%;
-}
+
 .rzad {
   margin: 0;
   padding: 0;
@@ -1395,16 +1419,7 @@ div.tytul {
 #mobile {
   display: block;
 }
-.underline h1::after {
-  content: "";
-  width: 3.8rem;
-  height: 3px;
-  display: block;
-  position: absolute;
-  left: 2.8rem;
-  bottom: 10;
-  background-color: #149ddd;
-}
+
 .right h2::after {
   content: "";
   width: 29rem;
