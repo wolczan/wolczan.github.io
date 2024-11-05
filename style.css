@@ -184,7 +184,7 @@ input[type="text"] {
   text-align: center;
   border-radius: 20px;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  /*transition: all 0.2s ease-in-out; */
 }
 .thumb.active {
   font-style:black;
@@ -193,7 +193,7 @@ input[type="text"] {
   text-align: center;
   border-radius: 20px;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  /*transition: all 0.2s ease-in-out; */
 }  
 .skills, #resume {
   margin-left: 20%;
@@ -202,18 +202,20 @@ input[type="text"] {
   font-size: 22px;
   color:white;
   font-size: 44px;
-  margin-left: 56rem;
-  margin-top: 9rem;
+  margin-left: 60rem;
+  margin-top: 2rem;
   font-weight: 700;
-  background: 
-  -webkit-linear-gradient(45deg, #62a7c7, #5430b6 80%);
+  background: -webkit-linear-gradient(45deg, #62a7c7, #000dff 80%);
+  background: linear-gradient(45deg, #62a7c7, #000dff 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .wrap3 {
-  background: white;
-  /* -webkit-linear-gradient(45deg, #62a7c7, #5430b6 80%); */
+  margin-left: 6rem;
+  margin-top: rem;
+  background: -webkit-linear-gradient(45deg, #62a7c7, #000dff 80%);
+  background: linear-gradient(45deg, #62a7c7, #000dff 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -247,8 +249,9 @@ input[type="text"] {
   background-color: #1E90FF;
   color: black;
   cursor: pointer;
-  padding: 2px 2px;
-  border: 2px solid transparent;
+  /*padding: 2px 2px; */
+  
+  
   border-radius: 18px;
 }
 #nav .header a {    /* ML  */
@@ -390,7 +393,7 @@ img#small2 {
 .inner:hover {
   transform: scale(1.1);
 }
-#number, #number2, #number3, #number4 {
+#number, #number2, #number3, #number4, #number5 {
   font-weight: 700;
   color : #543030;
   font-size: 1.1rem;
@@ -423,10 +426,6 @@ svg {
     position:absolute;
     top:0;
     left:0;
-}
-.main {
-  font-weight: 600;
-  margin-left: 4rem;
 }
 .show-on-mobile {
   display: none;
@@ -512,6 +511,29 @@ a:hover {
   flex-shrink: 0; /* Prevents button from shrinking */
   transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
+.skill {
+  transform: scale(0.75); /* Scale down to 75% of its original size */
+  transform-origin: center;
+}
+.outer {
+  margin: 4px; /* Smaller margin around the circle */
+}
+
+.inner {
+  padding: 2px; /* Smaller padding inside the circle */
+}
+
+.main {
+  font-weight: 600;
+  margin-left: 3.3rem;
+  margin-top: 6px; /* Adjust the gap between the circle and the text below */
+  font-size: 1.4rem; /* Keep text size proportionate */
+}
+
+svg {
+  margin-top: 4px; /* Smaller gap above the SVG circle */
+}
+
 .button span {
   font-weight: bold;
   font-size: 1rem;
@@ -553,6 +575,7 @@ p.par3{
   display: flex;
   margin-left: 5%;
   max-width: 100%;
+  margin-bottom: -6rem;
 }
 .bottom {
   font-size: 16px;
@@ -572,10 +595,6 @@ p.bottom2{
   margin-right: 0.2rem;
   width: 3rem;
   height: 3rem;
- }
-.office {
-  width: 7rem;
-  height: 7rem;
  }
 .test-grid {
   display: grid;
@@ -648,6 +667,23 @@ h4 {
   position: absolute;
   background-color: #149ddd;
 }
+.flex2 h2::after {
+  content: "";
+  width: 16rem;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background-color: #149ddd;
+}
+.flex2 .weather-title2::after {
+  content: "";
+  width: 12rem; /* Adjust width as needed */
+  height: 3px;
+  display: block;
+  position: absolute;
+  background-color: #149ddd; /* Different color for differentiation */
+}
+
 .right h2::after {
   content: "";
   width: 29rem;
@@ -656,9 +692,25 @@ h4 {
   position: absolute;
   background-color: #149ddd;
 }
+.under h2::after {
+  content: "";
+  width: 6.5rem;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background-color: #149ddd;
+}
 .underline h2::after {
   content: "";
-  width: 6rem;
+  width: 13rem;
+  height: 3px;
+  display: block;
+  position: absolute;
+  background-color: #149ddd;
+}
+.underline2 h2::after {
+  content: "";
+  width: 29rem;
   height: 3px;
   display: block;
   position: absolute;
@@ -771,22 +823,20 @@ h4 {
 }
 .flex2 {
   display: flex;
-  margin-left: 20%;
-  justify-content: space-evenly;
-  align-items: center;
-  background-size: 140%;
-  background-image: url('Assets/weather.jpg'); 
-  background-size: cover; /* This will make the image cover the entire container */
+  justify-content: center;
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; 
-  width: 50%;
-
+  margin-top: 10px;
+  margin-right: 22rem;
 }
+.flex2 .weather-card:first-child {
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
 .weather-card {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
- 
   max-width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -886,7 +936,7 @@ div.container {
 }
 .office{
   margin-top: -2rem;
-  width: 6rem;
+  width: 7rem;
   height: 6rem;
 }
 .powershell li {
@@ -984,10 +1034,7 @@ input[type=text], select, textarea {
 }
 .testi {
   display: flex;
-  
- 
   margin-left: 20%;
-  margin-right: 5%;
   margin-bottom:20px;
 }
 figure.snip1157 {
@@ -1241,6 +1288,10 @@ p.bottom2 {
 }
 }
 @media (max-width: 768px) { 
+  .flex2 {
+    display: flex;
+    flex-direction: column;
+  }
   .button-container {
     flex-direction: column; /* Stack buttons vertically */
     gap: 15px; /* Optional: Adjust spacing between buttons for vertical layout */
@@ -1248,16 +1299,13 @@ p.bottom2 {
   }
   .button {
     cursor: pointer;
-    
     border: 1px solid #ccc; /* Adds a border to resemble a button */
     border-radius: 5px; /* Rounds the corners slightly */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     white-space: nowrap; /* Prevents text from wrapping */
     flex-shrink: 0; /* Prevents button from shrinking */
-    
     transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
     width: 300px; /* Fixed width for buttons */
-    
   }
  .jirka {
   width: 25%;

@@ -73,6 +73,16 @@ let intervalId = setInterval(() => {
     number4.innerHTML = counter4 + "%";
   }
 }, 27);
+let number5 = document.getElementById("number5");
+let counter5 = 0;
+let intervalId5 = setInterval(() => {
+  if (counter5 === 80) {
+    clearInterval(intervalId5);
+  } else {
+    counter5 += 1;
+    number5.innerHTML = counter5 + "%";
+  }
+}, 27);
 
 /*const backToTopButton = document.querySelector('#back-to-top');
 window.addEventListener('scroll', () => {
@@ -219,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var subject = "Enquiry from " + name + " (" + enquiryType + ")";
   var body = "Name: " + name + "\nEmail: " + email + "\nEnquiry Type: " + enquiryType + "\n\nMessage:\n" + message;
 
-  window.location.href = 'mailto:abc@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.location.href = 'mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 }
 
 function resetForm() {
