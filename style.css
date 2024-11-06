@@ -827,7 +827,7 @@ h4 {
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; 
   margin-top: 10px;
-  margin-right: 22rem;
+  align-items: center;
 }
 .flex2 .weather-card:first-child {
   margin-right: 20px; /* Adjust the value as needed */
