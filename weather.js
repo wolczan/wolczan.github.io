@@ -2,7 +2,7 @@
 async function fetchWeatherDataForManchester() {
     try {
         const cityName = 'Manchester';
-        const apiKey = '7db2fa0b9d44c2c674ebc78fdc2df2e8'; // Replace with your actual API key
+        const apiKey = '7db2fa0b9d44c2c674ebc78fdc2df2e8';
 
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
         const res = await fetch(url);

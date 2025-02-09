@@ -353,17 +353,18 @@ img#small2 {
 }
 .rzad {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: row; /* Items are arranged in a row */
+  flex-wrap: wrap; /* Allows wrapping if needed */
+  justify-content: flex-start; /* Aligns items from the left */
+  align-items: flex-start; /* Keeps items aligned at the top */
   margin-left: 20%;
 }
+
+.skill:nth-child(3) { order: 1; } /* Move JavaScript up */
 .skill {
   width: 160px;
   height: 160px;
   position: relative;
-  margin: 2rem;
-  margin-top: 5rem;
 }
 .outer {
   height: 160px;
@@ -559,6 +560,7 @@ p.par2 {
   letter-spacing: 0.5px;
   padding: 10px;
   margin-left: 20%;
+  margin-top: 15px;
 }
 p.par3{
   padding: 10px;
@@ -681,7 +683,8 @@ h4 {
   height: 3px;
   display: block;
   position: absolute;
-  background-color: #149ddd; /* Different color for differentiation */
+  background-color: #149ddd;
+  margin-left: 30px; /* Different color for differentiation */
 }
 
 .right h2::after {
@@ -828,9 +831,7 @@ h4 {
   background-repeat: no-repeat; 
   margin-top: 10px;
   align-items: center;
-}
-.flex2 .weather-card:first-child {
-  margin-right: 20px; /* Adjust the value as needed */
+  gap: 10px;
 }
 
 .weather-card {
@@ -901,12 +902,13 @@ h5 {
   width: 30%; 
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 16%);
   }
-.mapy {
-  width: 33rem;
-  height: 240px;
-  border: 0;
-  margin-left: 4%;
-}
+  .mapy {
+    width: 70%;  /* Full width of the container */
+    max-width: 450px; /* Prevent it from being too large */
+    height: 260px;  /* Adjust height */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+  }
 .mac{
   width: 80px;
   height: 80px;
@@ -1215,6 +1217,7 @@ figure.snip1157 .arrow {
 @media screen and (max-width: 1324px) {
 .rzad {
   display: flex;
+  
 }
 .search-bar {
   margin-left: 8rem;
@@ -1366,7 +1369,7 @@ p.par, p.par3 {
 .rzad {
   margin: 0;
   padding: 0;
-  margin-left: 3rem;
+ 
 }
 .rectangle {
   margin: 0 auto;
@@ -1427,6 +1430,7 @@ p.par, p.par3 {
 .rzad {
   display:flex;
   flex-direction: row;
+  
 }
 div.bottom2 {
   font-size: 16px;
